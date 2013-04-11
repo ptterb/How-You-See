@@ -22,7 +22,7 @@ class testApp : public ofBaseApp{
         string readSerial();
         void filterFbo(ofFbo &fbo, string inString);
 
-        ofFbo liveView;
+        ofVideoGrabber grabber;
         ofFbo quad1;
         ofFbo quad2;
         ofFbo quad3;
