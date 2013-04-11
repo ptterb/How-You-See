@@ -28,5 +28,5 @@ class testApp : public ofBaseApp{
         ofFbo quad3;
         ofFbo quad4;
 
-		
+        ofSerial serial;
 };
