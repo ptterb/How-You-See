@@ -3,16 +3,24 @@
 //--------------------------------------------------------------
 void testApp::setup(){
 
+    //Setup fbos, canvas and objects needed
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
+    
+    // Read in serial from arduino plugs
+    
+    // Update FBOs according to selections
+    
+    // Update live view FBO
 
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
 
+    // Draw out the FBOs and any interface
 }
 
 
