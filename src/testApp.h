@@ -1,6 +1,9 @@
 #pragma once
 
 #include "ofMain.h"
+#include "Filter.h"
+#include "ColorFilter.h"
+#include "DirectionFilter.h"
 
 class testApp : public ofBaseApp{
 
@@ -19,7 +22,7 @@ class testApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-        string readSerial();
+        unsigned char *readSerial();
         void filterFbo(ofFbo &fbo, string inString);
 
         ofVideoGrabber grabber;
@@ -29,4 +32,8 @@ class testApp : public ofBaseApp{
         ofFbo quad4;
 
         ofSerial serial;
+    
+        // Filter subclasses
+        ColorFilter color;
+        DirectionFilter direction;
 };

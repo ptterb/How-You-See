@@ -5,9 +5,6 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-
-    //Setup fbos, canvas and objects needed
-    grabber.initGrabber(640, 480);
     
     // UNCOMMENT WHEN WE'RE READY FOR SERIAL
     
@@ -16,66 +13,52 @@ void testApp::setup(){
 //        printf("serial connected");
 //    }
     
-    quad1.allocate(640, 480);
-    quad2.allocate(640, 480);
-    quad3.allocate(640, 480);
-    quad4.allocate(640, 480);
+    grabber.initGrabber(640, 480);
+    
+    
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
     
     // Read in serial from arduino plugs
+    //unsigned char bytes = new unsigned char[4];
+    //bytes = readSerial();
   
     
-    // Update FBOs according to selections
-    quad1.begin();
-    grabber.draw(0, 0);
-    quad1.end();
-    
-    quad2.begin();
-    grabber.draw(0, 0);
-    quad2.end();
-    
-    quad3.begin();
-    grabber.draw(0, 0);
-    quad3.end();
-    
-    quad4.begin();
-    grabber.draw(0, 0);
-    quad4.end();
-    
-    // Update live view grabber
+    // Update grabber for live view
     grabber.update();
     
+    // Update filters according to selections
+    // TODO only update the filters that have been selected and draw into the correct quads
+    color.update();
+    direction.update();
     
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
 
-    // Draw out the FBOs and any interface
+    // Draw out the filters and any interface
     
     // Quad 1
-    quad1.draw(grabber.width, 0, -grabber.width, grabber.height);
-    
+    color.draw(0, 0);
+
     // Quad 2
-    quad2.draw(grabber.width*2, 0, -grabber.width, grabber.height);
-    
+    direction.draw(direction.vWidth, 0);
+   
     // Quad 3
-    quad3.draw(grabber.width, grabber.height, -grabber.width, grabber.height);
-    
+
     // Quad 4
-    quad4.draw(grabber.width*2, grabber.height, -grabber.width, grabber.height);
     
     // Live view
     grabber.draw(grabber.width*1.25, grabber.height*.75, -320,240);
-    
+   
 }
 
 
 // Read in the string of chars from arduino plugs - example from oFx docs
-string testApp::readSerial(){
+unsigned char *testApp::readSerial(){
 
     int bytesRequired = 4;
     unsigned char bytes[bytesRequired];
