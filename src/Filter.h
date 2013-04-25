@@ -26,6 +26,7 @@ public:
     
     Filter();
     
+    // Virtual functions. Need them to access child functions from pointer array
     virtual void update() = 0;
     virtual void draw(float x, float y) = 0;
     

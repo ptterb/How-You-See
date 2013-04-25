@@ -21,15 +21,10 @@ class testApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-    
-        unsigned char *readSerial();
-        void filterFbo(ofFbo &fbo, string inString);
 
         ofVideoGrabber grabber;
-        ofFbo quad1;
-        ofFbo quad2;
-        ofFbo quad3;
-        ofFbo quad4;
+        int vidWidth = 640;
+        int vidHeight = 480;
 
         ofSerial serial;
     
