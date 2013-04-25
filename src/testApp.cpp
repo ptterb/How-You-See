@@ -15,6 +15,9 @@ void testApp::setup(){
     
     grabber.initGrabber(640, 480);
     
+    // Add filters into the superclass array
+    filters[0] = &color;
+    filters[1] = &direction;
     
 }
 
@@ -31,8 +34,13 @@ void testApp::update(){
     
     // Update filters according to selections
     // TODO only update the filters that have been selected and draw into the correct quads
-    color.update();
-    direction.update();
+    
+    for (int i = 0; i < numFilters; i++){
+        
+        if (filters[i]->location != 0){
+            filters[i]->update();
+        }
+    }
     
 }
 
@@ -41,11 +49,27 @@ void testApp::draw(){
 
     // Draw out the filters and any interface
     
+    for (int i = 0; i < numFilters; i++){
+        if (filters[i]->location == 1){
+            filters[i]->draw(0,0);
+        }
+        else if (filters[i]->location == 2){
+            filters[i]->draw(640,0);
+        }
+        else if (filters[i]->location == 3){
+            filters[i]->draw(0,480);
+        }
+        else if (filters[i]->location == 4){
+            filters[i]->draw(640,480);
+        }
+    }
+    
     // Quad 1
-    color.draw(0, 0);
+    //filters[0]->draw(0,0);
+    //color.draw(0, 0);
 
     // Quad 2
-    direction.draw(direction.vWidth, 0);
+    //direction.draw(direction.vWidth, 0);
    
     // Quad 3
 
@@ -109,6 +133,45 @@ void testApp::filterFbo(ofFbo &fbo, string inString){
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
+    
+    // Receive the key commands from the arduino leonardo to tell the app which plugs are plugged into what filter.
+    
+    switch (key) {
+        case 'A':
+            filters[0]->changeLoc(1);
+            break;
+        case 'B':
+            filters[0]->changeLoc(2);
+            break;
+        case 'C':
+            filters[0]->changeLoc(3);
+            break;
+        case 'D':
+            filters[0]->changeLoc(4);
+            break;
+        case '1':
+            filters[0]->changeLoc(0);
+            break;
+            
+        case 'a':
+            filters[1]->changeLoc(1);
+            break;
+        case 'b':
+            filters[1]->changeLoc(2);
+            break;
+        case 'c':
+            filters[1]->changeLoc(3);
+            break;
+        case 'd':
+            filters[1]->changeLoc(4);
+            break;
+        case '2':
+            filters[1]->changeLoc(0);
+            break;
+            
+        default:
+            break;
+    }
 
 }
 

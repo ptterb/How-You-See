@@ -34,6 +34,11 @@ class testApp : public ofBaseApp{
         ofSerial serial;
     
         // Filter subclasses
+        int numFilters = 2;
         ColorFilter color;
         DirectionFilter direction;
+    
+        // Filter array
+        Filter * filters[2];
+
 };

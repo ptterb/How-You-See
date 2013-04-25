@@ -15,12 +15,13 @@ Filter::Filter(){
     fbo.allocate(vWidth, vHeight);
     
     // Don't run the filter unless it's ready to be drawn to the screen. Default is off.
-    state = false;
+    location = 0;
     
-}
+};
 
-void Filter::changeState(){
+void Filter::changeLoc(int _location){
     
-    state = !state;
+    location = _location;
     
-}
+};
+

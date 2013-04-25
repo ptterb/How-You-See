@@ -22,13 +22,16 @@ class Filter {
     
 public:
     
-    void changeState();
+    void changeLoc(int _location);
     
     Filter();
     
+    virtual void update() = 0;
+    virtual void draw(float x, float y) = 0;
+    
     ofVideoGrabber grabber;
     ofFbo fbo;
-    bool state;
+    int location = 0;
     const float vWidth = 640;
     const float vHeight = 480;
 };
