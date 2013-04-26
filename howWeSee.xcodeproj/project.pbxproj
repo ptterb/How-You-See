@@ -34,6 +34,7 @@
 		E7E077E515D3B63C0020DFD4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */; };
 		E7E077E815D3B6510020DFD4 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E715D3B6510020DFD4 /* QTKit.framework */; };
 		E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F985F515E0DE99003869B5 /* Accelerate.framework */; };
+		F902DFBF172A03110031111C /* MotionFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F902DFBD172A03110031111C /* MotionFilter.cpp */; };
 		F9B3633F172484B7007D02E0 /* Filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9B3633D172484B7007D02E0 /* Filter.cpp */; };
 		F9B36342172488F9007D02E0 /* ColorFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9B36340172488F9007D02E0 /* ColorFilter.cpp */; };
 		F9B36345172491A1007D02E0 /* DirectionFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9B36343172491A1007D02E0 /* DirectionFilter.cpp */; };
@@ -166,6 +167,8 @@
 		E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		E7E077E715D3B6510020DFD4 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		E7F985F515E0DE99003869B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
+		F902DFBD172A03110031111C /* MotionFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MotionFilter.cpp; sourceTree = "<group>"; };
+		F902DFBE172A03110031111C /* MotionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionFilter.h; sourceTree = "<group>"; };
 		F9B3633D172484B7007D02E0 /* Filter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Filter.cpp; sourceTree = "<group>"; };
 		F9B3633E172484B7007D02E0 /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filter.h; sourceTree = "<group>"; };
 		F9B36340172488F9007D02E0 /* ColorFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorFilter.cpp; sourceTree = "<group>"; };
@@ -570,6 +573,8 @@
 				F9B36340172488F9007D02E0 /* ColorFilter.cpp */,
 				F9B36344172491A1007D02E0 /* DirectionFilter.h */,
 				F9B36343172491A1007D02E0 /* DirectionFilter.cpp */,
+				F902DFBD172A03110031111C /* MotionFilter.cpp */,
+				F902DFBE172A03110031111C /* MotionFilter.h */,
 			);
 			name = filters;
 			sourceTree = "<group>";
@@ -796,6 +801,7 @@
 				F9B3633F172484B7007D02E0 /* Filter.cpp in Sources */,
 				F9B36342172488F9007D02E0 /* ColorFilter.cpp in Sources */,
 				F9B36345172491A1007D02E0 /* DirectionFilter.cpp in Sources */,
+				F902DFBF172A03110031111C /* MotionFilter.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

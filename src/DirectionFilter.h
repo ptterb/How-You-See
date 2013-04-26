@@ -31,5 +31,5 @@ public:
     ofxCvColorImage colorImage;
     ofxCvGrayscaleImage grayImage;
     ofImage displayGray;
-    
+ 
 };

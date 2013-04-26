@@ -11,6 +11,7 @@ void testApp::setup(){
     // Add filters into the superclass array
     filters[0] = &color;
     filters[1] = &direction;
+    filters[2] = &motion;
     
 }
 
@@ -70,7 +71,7 @@ void testApp::keyPressed(int key){
     // Receive the key commands from the arduino leonardo to tell the app which plugs are plugged into what filter.
     switch (key) {
         case 'A':
-            filters[0]->changeLoc(1);
+            filters[2]->changeLoc(1);
             break;
         case 'B':
             filters[0]->changeLoc(2);

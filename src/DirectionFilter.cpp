@@ -15,6 +15,7 @@ DirectionFilter::DirectionFilter(){
     colorImage.allocate(vWidth, vHeight);
     grayImage.allocate(vWidth, vHeight);
     displayGray.allocate(vWidth, vHeight, OF_IMAGE_GRAYSCALE);
+    
 };
 
 void DirectionFilter::update(){
@@ -41,7 +42,11 @@ void DirectionFilter::update(){
     
     // Draw into the FBO at 0,0
     fbo.begin();
-    colorImage.draw(0, 0);
+    
+    ofSetColor(128, 128, 128);
+    ofRect(0, 0, vWidth, vHeight);
+        ofSetColor(255, 255, 255);
+    //colorImage.draw(0, 0);
     cf.draw(0,0,vWidth, vHeight);
     fbo.end();
     
