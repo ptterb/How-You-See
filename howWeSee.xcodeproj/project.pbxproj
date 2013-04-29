@@ -38,6 +38,7 @@
 		F9B3633F172484B7007D02E0 /* Filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9B3633D172484B7007D02E0 /* Filter.cpp */; };
 		F9B36342172488F9007D02E0 /* ColorFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9B36340172488F9007D02E0 /* ColorFilter.cpp */; };
 		F9B36345172491A1007D02E0 /* DirectionFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9B36343172491A1007D02E0 /* DirectionFilter.cpp */; };
+		F9FC6A00172EB742009F7BCF /* FacesFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9FC69FE172EB742009F7BCF /* FacesFilter.cpp */; };
 		a940aea8338fb9ca375cd607b2292072 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = df3cfb6367f0771d65acded6ba846167 /* core.c */; };
 		bc626c637c0629535ffeb02fed2f8fc8 /* tilt.c in Sources */ = {isa = PBXBuildFile; fileRef = 797abdbfddc99d927288b466d8511e0f /* tilt.c */; };
 		d14a8f2403316bdb1a8e118e687d5d37 /* cameras.c in Sources */ = {isa = PBXBuildFile; fileRef = 3824859c5a24841e8aaae47e3c156bb9 /* cameras.c */; };
@@ -175,6 +176,8 @@
 		F9B36341172488F9007D02E0 /* ColorFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorFilter.h; sourceTree = "<group>"; };
 		F9B36343172491A1007D02E0 /* DirectionFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DirectionFilter.cpp; sourceTree = "<group>"; };
 		F9B36344172491A1007D02E0 /* DirectionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionFilter.h; sourceTree = "<group>"; };
+		F9FC69FE172EB742009F7BCF /* FacesFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FacesFilter.cpp; sourceTree = "<group>"; };
+		F9FC69FF172EB742009F7BCF /* FacesFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacesFilter.h; sourceTree = "<group>"; };
 		a0399084868e7cafb7e3d8e975d55095 /* retina.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = retina.hpp; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/contrib/retina.hpp; sourceTree = SOURCE_ROOT; };
 		a15e0125b8c9b7f01ded56958ff73de8 /* matrix.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = matrix.h; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/matrix.h; sourceTree = SOURCE_ROOT; };
 		a2ee5e80b134ea52a8b369d28837350a /* eigen.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = eigen.hpp; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/eigen.hpp; sourceTree = SOURCE_ROOT; };
@@ -575,6 +578,8 @@
 				F9B36343172491A1007D02E0 /* DirectionFilter.cpp */,
 				F902DFBD172A03110031111C /* MotionFilter.cpp */,
 				F902DFBE172A03110031111C /* MotionFilter.h */,
+				F9FC69FE172EB742009F7BCF /* FacesFilter.cpp */,
+				F9FC69FF172EB742009F7BCF /* FacesFilter.h */,
 			);
 			name = filters;
 			sourceTree = "<group>";
@@ -802,6 +807,7 @@
 				F9B36342172488F9007D02E0 /* ColorFilter.cpp in Sources */,
 				F9B36345172491A1007D02E0 /* DirectionFilter.cpp in Sources */,
 				F902DFBF172A03110031111C /* MotionFilter.cpp in Sources */,
+				F9FC6A00172EB742009F7BCF /* FacesFilter.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
