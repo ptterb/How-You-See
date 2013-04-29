@@ -29,7 +29,8 @@ public:
     ofxCvHaarFinder finder;
     ofxCvColorImage camImage;
     ofxCvGrayscaleImage greyImage;
-    ofImage outputImg;
+    ofImage spotMask;
+    ofImage spotlight;
     
     int numFaces;
     
