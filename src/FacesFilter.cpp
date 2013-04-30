@@ -94,6 +94,9 @@ void FacesFilter::draw(float x, float y) {
 	for(int i = 0; i < finder.blobs.size(); i++) {
         ofRectangle current = finder.blobs[i].boundingRect;
         
+        float centerX = current.x + (current.width/2);
+        float centerY = current.y + (current.height/2);
+  
         // Draw a subsection of camImage, hightlighting the face
         // TODO - MAKE THIS LOOK BETTER
         //spotlight.drawSubsection(current.x, current.y, current.width, current.height, current.x, current.y);
@@ -116,19 +119,19 @@ void FacesFilter::draw(float x, float y) {
         //move the mask around with the mouse by modifying the texture coordinates
         
         glMultiTexCoord2d(GL_TEXTURE0_ARB, 0, 0);
-        glMultiTexCoord2d(GL_TEXTURE1_ARB, current.x, current.y);
+        glMultiTexCoord2d(GL_TEXTURE1_ARB, 0-centerX + (spotMask.width/2), 0-centerY + (spotMask.height/2));
         glVertex2f( 0, 0);
         
         glMultiTexCoord2d(GL_TEXTURE0_ARB, blackTop.getWidth(), 0);
-        glMultiTexCoord2d(GL_TEXTURE1_ARB, current.x + current.width, current.y);
+        glMultiTexCoord2d(GL_TEXTURE1_ARB, 0-centerX + spotMask.width + (spotMask.width/2), 0-centerY + (spotMask.height/2));
         glVertex2f( blackTop.getWidth(), 0);
         
         glMultiTexCoord2d(GL_TEXTURE0_ARB, blackTop.getWidth(), blackTop.getHeight());
-        glMultiTexCoord2d(GL_TEXTURE1_ARB, current.x + current.width, current.y + current.height);
+        glMultiTexCoord2d(GL_TEXTURE1_ARB, 0-centerX + spotMask.width + (spotMask.width/2), 0-centerY + spotMask.height + (spotMask.height/2));
         glVertex2f( blackTop.getWidth(), blackTop.getHeight());
         
         glMultiTexCoord2d(GL_TEXTURE0_ARB, 0, blackTop.getHeight());
-        glMultiTexCoord2d(GL_TEXTURE1_ARB, current.x, current.y + current.height);
+        glMultiTexCoord2d(GL_TEXTURE1_ARB, 0-centerX + (spotMask.width/2), 0-centerY + spotMask.height + (spotMask.height/2));
         glVertex2f( 0, blackTop.getHeight() );
         
         glEnd();
