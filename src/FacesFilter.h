@@ -31,8 +31,12 @@ public:
     ofxCvGrayscaleImage greyImage;
     ofImage spotMask;
     ofImage spotlight;
+    ofImage blackTop;
+    ofImage bottomLayer;
     
     int numFaces;
     
     float rotY = 0;
+    
+    ofShader maskShader;
 };

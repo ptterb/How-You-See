@@ -35,6 +35,8 @@
 		E7E077E815D3B6510020DFD4 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E715D3B6510020DFD4 /* QTKit.framework */; };
 		E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F985F515E0DE99003869B5 /* Accelerate.framework */; };
 		F902DFBF172A03110031111C /* MotionFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F902DFBD172A03110031111C /* MotionFilter.cpp */; };
+		F958F596172F544A0083E81F /* mask.vert in Sources */ = {isa = PBXBuildFile; fileRef = F958F595172F544A0083E81F /* mask.vert */; };
+		F958F598172F54680083E81F /* mask.frag in Sources */ = {isa = PBXBuildFile; fileRef = F958F597172F54680083E81F /* mask.frag */; };
 		F9B3633F172484B7007D02E0 /* Filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9B3633D172484B7007D02E0 /* Filter.cpp */; };
 		F9B36342172488F9007D02E0 /* ColorFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9B36340172488F9007D02E0 /* ColorFilter.cpp */; };
 		F9B36345172491A1007D02E0 /* DirectionFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9B36343172491A1007D02E0 /* DirectionFilter.cpp */; };
@@ -170,6 +172,12 @@
 		E7F985F515E0DE99003869B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
 		F902DFBD172A03110031111C /* MotionFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MotionFilter.cpp; sourceTree = "<group>"; };
 		F902DFBE172A03110031111C /* MotionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionFilter.h; sourceTree = "<group>"; };
+		F958F58B172F4BAE0083E81F /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		F958F58E172F4BAE0083E81F /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
+		F958F58F172F4BAE0083E81F /* spotlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spotlight.png; sourceTree = "<group>"; };
+		F958F590172F4BAE0083E81F /* howWeSeeDebug.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = howWeSeeDebug.app; sourceTree = "<group>"; };
+		F958F595172F544A0083E81F /* mask.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = mask.vert; sourceTree = "<group>"; };
+		F958F597172F54680083E81F /* mask.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = mask.frag; sourceTree = "<group>"; };
 		F9B3633D172484B7007D02E0 /* Filter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Filter.cpp; sourceTree = "<group>"; };
 		F9B3633E172484B7007D02E0 /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filter.h; sourceTree = "<group>"; };
 		F9B36340172488F9007D02E0 /* ColorFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorFilter.cpp; sourceTree = "<group>"; };
@@ -539,6 +547,7 @@
 			children = (
 				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
 				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
+				F958F589172F4BAE0083E81F /* bin */,
 				E4B69E1C0A3A1BDC003C02F2 /* src */,
 				E4EEC9E9138DF44700A80321 /* openFrameworks */,
 				BB4B014C10F69532006C3DED /* addons */,
@@ -567,6 +576,27 @@
 				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
 			);
 			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+		F958F589172F4BAE0083E81F /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				F958F58A172F4BAE0083E81F /* data */,
+				F958F590172F4BAE0083E81F /* howWeSeeDebug.app */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		F958F58A172F4BAE0083E81F /* data */ = {
+			isa = PBXGroup;
+			children = (
+				F958F58B172F4BAE0083E81F /* .gitkeep */,
+				F958F58E172F4BAE0083E81F /* haarcascade_frontalface_default.xml */,
+				F958F58F172F4BAE0083E81F /* spotlight.png */,
+				F958F595172F544A0083E81F /* mask.vert */,
+				F958F597172F54680083E81F /* mask.frag */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 		F9B363461724B970007D02E0 /* filters */ = {
@@ -808,6 +838,8 @@
 				F9B36345172491A1007D02E0 /* DirectionFilter.cpp in Sources */,
 				F902DFBF172A03110031111C /* MotionFilter.cpp in Sources */,
 				F9FC6A00172EB742009F7BCF /* FacesFilter.cpp in Sources */,
+				F958F596172F544A0083E81F /* mask.vert in Sources */,
+				F958F598172F54680083E81F /* mask.frag in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
