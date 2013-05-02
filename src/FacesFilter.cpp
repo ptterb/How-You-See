@@ -38,6 +38,7 @@ void FacesFilter::update(){
     
     if (grabber.isFrameNew()){
         camImage.setFromPixels(grabber.getPixelsRef());
+        camImage.mirror(false, true);
         greyImage = camImage;
         
         // ADJUST THE NUMBERS TO FIND SMALLER FACES IF NECESSARY
