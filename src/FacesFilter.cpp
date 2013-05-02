@@ -50,46 +50,16 @@ void FacesFilter::update(){
     // DEBUGGING
     //numFaces = finder.blobs.size();
     //ofLogNotice() << numFaces;
-
-    
-//    // Draw into the FBO
-//    fbo.begin();
-//    ofEnableAlphaBlending();
-//    ofClear(0, 0, 0);
-//    
-//    //Draw shadowy version
-//    camImage.draw(0, 0);
-//    ofSetColor(0, 0, 0, 230);
-//    ofRect(0, 0, 640, 480);
-//    ofSetColor(255, 255, 255);
-//    
-//    ofPixels camPix = grabber.getPixelsRef();
-//    ofPixels outPix = spotlight.getPixelsRef();
-//    spotlight.setFromPixels(camPix);
-//    
-//    // Draw spotlight on faces found
-//	for(int i = 0; i < finder.blobs.size(); i++) {
-//        ofRectangle current = finder.blobs[i].boundingRect;
-//        
-//        // Draw a subsection of camImage, hightlighting the face
-//        // TODO - MAKE THIS LOOK BETTER
-//        spotlight.drawSubsection(current.x, current.y, current.width, current.height, current.x, current.y);
-//	}
-//    
-//    fbo.end();
-
     
 };
 
 void FacesFilter::draw(float x, float y) {
     
-    // Draw the filter to the screen.
-//    fbo.draw(x, y);
-    
-    
+    // Move to the correct x,y position
     ofPushMatrix();
     ofTranslate(x, y);
-    //first draw the bottom layer
+    
+    // First draw the bottom layer
 	camImage.draw(0, 0);
 	
     
@@ -101,11 +71,6 @@ void FacesFilter::draw(float x, float y) {
             
             float centerX = current.x + (current.width/2);
             float centerY = current.y + (current.height/2);
-            
-            // Draw a subsection of camImage, hightlighting the face
-            // TODO - MAKE THIS LOOK BETTER
-            //spotlight.drawSubsection(current.x, current.y, current.width, current.height, current.x, current.y);
-            
             
             //then draw a quad for the top layer using our composite shader to set the alpha
             maskShader.begin();
@@ -121,7 +86,7 @@ void FacesFilter::draw(float x, float y) {
             //draw a quad the size of the frame
             glBegin(GL_QUADS);
             
-            //move the mask around with the mouse by modifying the texture coordinates
+            //move the mask around with the face that is being tracked
             
             glMultiTexCoord2d(GL_TEXTURE0_ARB, 0, 0);
             glMultiTexCoord2d(GL_TEXTURE1_ARB, 0-centerX + (spotMask.width/2), 0-centerY + (spotMask.height/2));
