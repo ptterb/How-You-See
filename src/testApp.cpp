@@ -78,10 +78,10 @@ void testApp::keyPressed(int key){
             filters[0]->changeLoc(2);
             break;
         case 'C':
-            filters[0]->changeLoc(3);
+            filters[3]->changeLoc(3);
             break;
         case 'D':
-            filters[0]->changeLoc(4);
+            filters[3]->changeLoc(4);
             break;
         case '1':
             filters[0]->changeLoc(0);
@@ -97,7 +97,7 @@ void testApp::keyPressed(int key){
             filters[1]->changeLoc(3);
             break;
         case 'd':
-            filters[1]->changeLoc(4);
+            filters[2]->changeLoc(4);
             break;
         case '2':
             filters[1]->changeLoc(0);
