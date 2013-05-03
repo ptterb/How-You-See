@@ -40,6 +40,7 @@
 		F9B3633F172484B7007D02E0 /* Filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9B3633D172484B7007D02E0 /* Filter.cpp */; };
 		F9B36342172488F9007D02E0 /* ColorFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9B36340172488F9007D02E0 /* ColorFilter.cpp */; };
 		F9B36345172491A1007D02E0 /* DirectionFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9B36343172491A1007D02E0 /* DirectionFilter.cpp */; };
+		F9E5B5521733CB690095784F /* Unplugged.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9E5B5501733CB690095784F /* Unplugged.cpp */; };
 		F9FC6A00172EB742009F7BCF /* FacesFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9FC69FE172EB742009F7BCF /* FacesFilter.cpp */; };
 		a940aea8338fb9ca375cd607b2292072 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = df3cfb6367f0771d65acded6ba846167 /* core.c */; };
 		bc626c637c0629535ffeb02fed2f8fc8 /* tilt.c in Sources */ = {isa = PBXBuildFile; fileRef = 797abdbfddc99d927288b466d8511e0f /* tilt.c */; };
@@ -184,6 +185,8 @@
 		F9B36341172488F9007D02E0 /* ColorFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorFilter.h; sourceTree = "<group>"; };
 		F9B36343172491A1007D02E0 /* DirectionFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DirectionFilter.cpp; sourceTree = "<group>"; };
 		F9B36344172491A1007D02E0 /* DirectionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionFilter.h; sourceTree = "<group>"; };
+		F9E5B5501733CB690095784F /* Unplugged.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Unplugged.cpp; sourceTree = "<group>"; };
+		F9E5B5511733CB690095784F /* Unplugged.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Unplugged.h; sourceTree = "<group>"; };
 		F9FC69FE172EB742009F7BCF /* FacesFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FacesFilter.cpp; sourceTree = "<group>"; };
 		F9FC69FF172EB742009F7BCF /* FacesFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacesFilter.h; sourceTree = "<group>"; };
 		a0399084868e7cafb7e3d8e975d55095 /* retina.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = retina.hpp; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/contrib/retina.hpp; sourceTree = SOURCE_ROOT; };
@@ -564,6 +567,8 @@
 				E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */,
 				F9B3633E172484B7007D02E0 /* Filter.h */,
 				F9B3633D172484B7007D02E0 /* Filter.cpp */,
+				F9E5B5511733CB690095784F /* Unplugged.h */,
+				F9E5B5501733CB690095784F /* Unplugged.cpp */,
 				F9B363461724B970007D02E0 /* filters */,
 			);
 			path = src;
@@ -840,6 +845,7 @@
 				F9FC6A00172EB742009F7BCF /* FacesFilter.cpp in Sources */,
 				F958F596172F544A0083E81F /* mask.vert in Sources */,
 				F958F598172F54680083E81F /* mask.frag in Sources */,
+				F9E5B5521733CB690095784F /* Unplugged.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

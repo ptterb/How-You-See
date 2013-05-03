@@ -6,6 +6,7 @@
 #include "DirectionFilter.h"
 #include "MotionFilter.h"
 #include "FacesFilter.h"
+#include "Unplugged.h"
 
 class testApp : public ofBaseApp{
 
@@ -39,5 +40,8 @@ class testApp : public ofBaseApp{
     
         // Filter array
         Filter * filters[4];
+    
+    Unplugged unplugged1;
+    Unplugged unplugged2;
 
 };

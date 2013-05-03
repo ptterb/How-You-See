@@ -31,10 +31,18 @@ void testApp::update(){
         }
     }
     
+    unplugged1.update();
+    unplugged2.update();
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
+    
+    // TESTING. All the same or mutiple instances?
+//    unplugged1.draw(0, 0);
+//    unplugged1.draw(640, 0);
+//    unplugged1.draw(0, 480);
+//    unplugged1.draw(640, 480);
 
     // Draw out the filters that are chosen
     for (int i = 0; i < numFilters; i++){
