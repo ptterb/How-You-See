@@ -19,6 +19,8 @@ ColorFilter::ColorFilter(){
     // This is where you set up the filter. Any variables that need to be allocated should be done here.
     
     colorImage.allocate(vWidth, vHeight);
+    // Initialize fonts
+    filterfont.loadFont("futura.ttf", 32, true);
 };
 
 void ColorFilter::update(){
@@ -51,6 +53,7 @@ void ColorFilter::update(){
     // Draw into the FBO
     fbo.begin();
     colorImage.draw(0, 0);
+    filterfont.drawString("color", vWidth/2,400);
     fbo.end();
     
     
