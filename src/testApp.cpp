@@ -80,39 +80,103 @@ void testApp::keyPressed(int key){
     // Receive the key commands from the arduino leonardo to tell the app which plugs are plugged into what filter.
     switch (key) {
         case 'A':
-            filters[3]->changeLoc(1);
+            filters[0]->changeLoc(1);
             break;
         case 'B':
             filters[0]->changeLoc(2);
             break;
         case 'C':
-            filters[3]->changeLoc(3);
+            filters[0]->changeLoc(3);
             break;
         case 'D':
-            filters[3]->changeLoc(4);
+            filters[0]->changeLoc(4);
             break;
         case '1':
             filters[0]->changeLoc(0);
             break;
             
-        case 'a':
+        case 'E':
             filters[1]->changeLoc(1);
             break;
-        case 'b':
+        case 'F':
             filters[1]->changeLoc(2);
             break;
-        case 'c':
+        case 'G':
             filters[1]->changeLoc(3);
             break;
-        case 'd':
-            filters[2]->changeLoc(4);
+        case 'H':
+            filters[1]->changeLoc(4);
             break;
         case '2':
             filters[1]->changeLoc(0);
             break;
             
-        default:
+        case 'I':
+            filters[2]->changeLoc(1);
             break;
+        case 'J':
+            filters[2]->changeLoc(2);
+            break;
+        case 'K':
+            filters[2]->changeLoc(3);
+            break;
+        case 'L':
+            filters[2]->changeLoc(4);
+            break;
+        case '3':
+            filters[2]->changeLoc(0);
+            break;
+            
+        case 'M':
+            filters[3]->changeLoc(1);
+            break;
+        case 'N':
+            filters[3]->changeLoc(2);
+            break;
+        case 'O':
+            filters[3]->changeLoc(3);
+            break;
+        case 'P':
+            filters[3]->changeLoc(4);
+            break;
+        case '4':
+            filters[3]->changeLoc(0);
+            break;
+            
+        case 'Q':
+            filters[3]->changeLoc(1);
+            break;
+        case 'R':
+            filters[3]->changeLoc(2);
+            break;
+        case 'S':
+            filters[3]->changeLoc(3);
+            break;
+        case 'T':
+            filters[3]->changeLoc(4);
+            break;
+        case '5':
+            filters[3]->changeLoc(0);
+            break;
+            
+        case 'U':
+            filters[2]->changeLoc(1);
+            break;
+        case 'V':
+            filters[2]->changeLoc(2);
+            break;
+        case 'W':
+            filters[2]->changeLoc(3);
+            break;
+        case 'X':
+            filters[2]->changeLoc(4);
+            break;
+        case '6':
+            filters[2]->changeLoc(0);
+            break;
+            
+        default:
+        break;
     }
 
 }
