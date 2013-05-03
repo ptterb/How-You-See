@@ -16,6 +16,10 @@
 		80a6d051bb53a1425de78d5db4adfbc9 /* registration.c in Sources */ = {isa = PBXBuildFile; fileRef = 38605b4b6c277285d92cd4ec5fdbc49e /* registration.c */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E2A084F81733869900EE9B84 /* ColorFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9B36340172488F9007D02E0 /* ColorFilter.cpp */; };
+		E2A084FC1734582200EE9B84 /* TextureFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A084FB1734582200EE9B84 /* TextureFilter.cpp */; };
+		E2A0852B1734595100EE9B84 /* ofxFlocking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A0851A1734595100EE9B84 /* ofxFlocking.cpp */; };
+		E2A0852C1734595100EE9B84 /* ofxFluid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A0851C1734595100EE9B84 /* ofxFluid.cpp */; };
+		E2A0852D1734595100EE9B84 /* ofxFXObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A0851F1734595100EE9B84 /* ofxFXObject.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
 		E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
@@ -147,6 +151,45 @@
 		9da0cbd43da38386eb04c9ae7ce0666e /* miniflann.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = miniflann.hpp; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/miniflann.hpp; sourceTree = SOURCE_ROOT; };
 		9ff9126184dfbde8a912373ebe9d2f9d /* highgui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = highgui.h; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv/highgui.h; sourceTree = SOURCE_ROOT; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
+		E2A084FA1734581100EE9B84 /* TextureFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureFilter.h; sourceTree = "<group>"; };
+		E2A084FB1734582200EE9B84 /* TextureFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextureFilter.cpp; sourceTree = "<group>"; };
+		E2A085011734595100EE9B84 /* ofxAbsDiff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxAbsDiff.h; sourceTree = "<group>"; };
+		E2A085021734595100EE9B84 /* ofxBlend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxBlend.h; sourceTree = "<group>"; };
+		E2A085031734595100EE9B84 /* ofxClone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxClone.h; sourceTree = "<group>"; };
+		E2A085041734595100EE9B84 /* ofxMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxMask.h; sourceTree = "<group>"; };
+		E2A085051734595100EE9B84 /* ofxMultiTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxMultiTexture.h; sourceTree = "<group>"; };
+		E2A085061734595100EE9B84 /* ofxSubstract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSubstract.h; sourceTree = "<group>"; };
+		E2A085081734595100EE9B84 /* ofxBloom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxBloom.h; sourceTree = "<group>"; };
+		E2A085091734595100EE9B84 /* ofxBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxBlur.h; sourceTree = "<group>"; };
+		E2A0850A1734595100EE9B84 /* ofxBokeh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxBokeh.h; sourceTree = "<group>"; };
+		E2A0850B1734595100EE9B84 /* ofxChromaAb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxChromaAb.h; sourceTree = "<group>"; };
+		E2A0850C1734595100EE9B84 /* ofxContrast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxContrast.h; sourceTree = "<group>"; };
+		E2A0850D1734595100EE9B84 /* ofxGaussianBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxGaussianBlur.h; sourceTree = "<group>"; };
+		E2A0850E1734595100EE9B84 /* ofxGlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxGlow.h; sourceTree = "<group>"; };
+		E2A0850F1734595100EE9B84 /* ofxGrayscale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxGrayscale.h; sourceTree = "<group>"; };
+		E2A085101734595100EE9B84 /* ofxInverse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxInverse.h; sourceTree = "<group>"; };
+		E2A085111734595100EE9B84 /* ofxLUT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxLUT.h; sourceTree = "<group>"; };
+		E2A085121734595100EE9B84 /* ofxMedian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxMedian.h; sourceTree = "<group>"; };
+		E2A085131734595100EE9B84 /* ofxOldTv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOldTv.h; sourceTree = "<group>"; };
+		E2A085151734595100EE9B84 /* ofxFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxFire.h; sourceTree = "<group>"; };
+		E2A085161734595100EE9B84 /* ofxGrayScott.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxGrayScott.h; sourceTree = "<group>"; };
+		E2A085171734595100EE9B84 /* ofxNoise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxNoise.h; sourceTree = "<group>"; };
+		E2A085181734595100EE9B84 /* ofxTint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTint.h; sourceTree = "<group>"; };
+		E2A0851A1734595100EE9B84 /* ofxFlocking.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxFlocking.cpp; sourceTree = "<group>"; };
+		E2A0851B1734595100EE9B84 /* ofxFlocking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxFlocking.h; sourceTree = "<group>"; };
+		E2A0851C1734595100EE9B84 /* ofxFluid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxFluid.cpp; sourceTree = "<group>"; };
+		E2A0851D1734595100EE9B84 /* ofxFluid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxFluid.h; sourceTree = "<group>"; };
+		E2A0851E1734595100EE9B84 /* ofxFX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxFX.h; sourceTree = "<group>"; };
+		E2A0851F1734595100EE9B84 /* ofxFXObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxFXObject.cpp; sourceTree = "<group>"; };
+		E2A085201734595100EE9B84 /* ofxFXObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxFXObject.h; sourceTree = "<group>"; };
+		E2A085211734595100EE9B84 /* ofxSwapBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSwapBuffer.h; sourceTree = "<group>"; };
+		E2A085231734595100EE9B84 /* ofxBounce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxBounce.h; sourceTree = "<group>"; };
+		E2A085241734595100EE9B84 /* ofxDisplacePixels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxDisplacePixels.h; sourceTree = "<group>"; };
+		E2A085251734595100EE9B84 /* ofxNormals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxNormals.h; sourceTree = "<group>"; };
+		E2A085261734595100EE9B84 /* ofxRipples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxRipples.h; sourceTree = "<group>"; };
+		E2A085271734595100EE9B84 /* ofxThreshold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxThreshold.h; sourceTree = "<group>"; };
+		E2A085291734595100EE9B84 /* ofxKaleidoscope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxKaleidoscope.h; sourceTree = "<group>"; };
+		E2A0852A1734595100EE9B84 /* ofxRotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxRotate.h; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
 		E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
@@ -489,6 +532,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				E2A084FD1734589700EE9B84 /* ofxFX */,
 				a0b90d3b0adb9c1716816714bf7f212b /* ofxOpenCv */,
 				9683228c705ca3ff4f2ea945072137db /* ofxKinect */,
 			);
@@ -523,6 +567,107 @@
 				BBAB23BE13894E4700AA2426 /* GLUT.framework */,
 			);
 			name = "3rd party frameworks";
+			sourceTree = "<group>";
+		};
+		E2A084FD1734589700EE9B84 /* ofxFX */ = {
+			isa = PBXGroup;
+			children = (
+				E2A084FF1734595100EE9B84 /* src */,
+			);
+			name = ofxFX;
+			sourceTree = "<group>";
+		};
+		E2A084FF1734595100EE9B84 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E2A085001734595100EE9B84 /* composers */,
+				E2A085071734595100EE9B84 /* filters */,
+				E2A085141734595100EE9B84 /* generative */,
+				E2A085191734595100EE9B84 /* interactive */,
+				E2A0851E1734595100EE9B84 /* ofxFX.h */,
+				E2A0851F1734595100EE9B84 /* ofxFXObject.cpp */,
+				E2A085201734595100EE9B84 /* ofxFXObject.h */,
+				E2A085211734595100EE9B84 /* ofxSwapBuffer.h */,
+				E2A085221734595100EE9B84 /* operations */,
+				E2A085281734595100EE9B84 /* transformers */,
+			);
+			name = src;
+			path = ../../../addons/ofxFX/src;
+			sourceTree = "<group>";
+		};
+		E2A085001734595100EE9B84 /* composers */ = {
+			isa = PBXGroup;
+			children = (
+				E2A085011734595100EE9B84 /* ofxAbsDiff.h */,
+				E2A085021734595100EE9B84 /* ofxBlend.h */,
+				E2A085031734595100EE9B84 /* ofxClone.h */,
+				E2A085041734595100EE9B84 /* ofxMask.h */,
+				E2A085051734595100EE9B84 /* ofxMultiTexture.h */,
+				E2A085061734595100EE9B84 /* ofxSubstract.h */,
+			);
+			path = composers;
+			sourceTree = "<group>";
+		};
+		E2A085071734595100EE9B84 /* filters */ = {
+			isa = PBXGroup;
+			children = (
+				E2A085081734595100EE9B84 /* ofxBloom.h */,
+				E2A085091734595100EE9B84 /* ofxBlur.h */,
+				E2A0850A1734595100EE9B84 /* ofxBokeh.h */,
+				E2A0850B1734595100EE9B84 /* ofxChromaAb.h */,
+				E2A0850C1734595100EE9B84 /* ofxContrast.h */,
+				E2A0850D1734595100EE9B84 /* ofxGaussianBlur.h */,
+				E2A0850E1734595100EE9B84 /* ofxGlow.h */,
+				E2A0850F1734595100EE9B84 /* ofxGrayscale.h */,
+				E2A085101734595100EE9B84 /* ofxInverse.h */,
+				E2A085111734595100EE9B84 /* ofxLUT.h */,
+				E2A085121734595100EE9B84 /* ofxMedian.h */,
+				E2A085131734595100EE9B84 /* ofxOldTv.h */,
+			);
+			path = filters;
+			sourceTree = "<group>";
+		};
+		E2A085141734595100EE9B84 /* generative */ = {
+			isa = PBXGroup;
+			children = (
+				E2A085151734595100EE9B84 /* ofxFire.h */,
+				E2A085161734595100EE9B84 /* ofxGrayScott.h */,
+				E2A085171734595100EE9B84 /* ofxNoise.h */,
+				E2A085181734595100EE9B84 /* ofxTint.h */,
+			);
+			path = generative;
+			sourceTree = "<group>";
+		};
+		E2A085191734595100EE9B84 /* interactive */ = {
+			isa = PBXGroup;
+			children = (
+				E2A0851A1734595100EE9B84 /* ofxFlocking.cpp */,
+				E2A0851B1734595100EE9B84 /* ofxFlocking.h */,
+				E2A0851C1734595100EE9B84 /* ofxFluid.cpp */,
+				E2A0851D1734595100EE9B84 /* ofxFluid.h */,
+			);
+			path = interactive;
+			sourceTree = "<group>";
+		};
+		E2A085221734595100EE9B84 /* operations */ = {
+			isa = PBXGroup;
+			children = (
+				E2A085231734595100EE9B84 /* ofxBounce.h */,
+				E2A085241734595100EE9B84 /* ofxDisplacePixels.h */,
+				E2A085251734595100EE9B84 /* ofxNormals.h */,
+				E2A085261734595100EE9B84 /* ofxRipples.h */,
+				E2A085271734595100EE9B84 /* ofxThreshold.h */,
+			);
+			path = operations;
+			sourceTree = "<group>";
+		};
+		E2A085281734595100EE9B84 /* transformers */ = {
+			isa = PBXGroup;
+			children = (
+				E2A085291734595100EE9B84 /* ofxKaleidoscope.h */,
+				E2A0852A1734595100EE9B84 /* ofxRotate.h */,
+			);
+			path = transformers;
 			sourceTree = "<group>";
 		};
 		E4328144138ABC890047C5CB /* Products */ = {
@@ -610,6 +755,8 @@
 				F902DFBE172A03110031111C /* MotionFilter.h */,
 				F9FC69FE172EB742009F7BCF /* FacesFilter.cpp */,
 				F9FC69FF172EB742009F7BCF /* FacesFilter.h */,
+				E2A084FA1734581100EE9B84 /* TextureFilter.h */,
+				E2A084FB1734582200EE9B84 /* TextureFilter.cpp */,
 			);
 			name = filters;
 			sourceTree = "<group>";
@@ -840,6 +987,10 @@
 				F958F596172F544A0083E81F /* mask.vert in Sources */,
 				F958F598172F54680083E81F /* mask.frag in Sources */,
 				E2A084F81733869900EE9B84 /* ColorFilter.cpp in Sources */,
+				E2A084FC1734582200EE9B84 /* TextureFilter.cpp in Sources */,
+				E2A0852B1734595100EE9B84 /* ofxFlocking.cpp in Sources */,
+				E2A0852C1734595100EE9B84 /* ofxFluid.cpp in Sources */,
+				E2A0852D1734595100EE9B84 /* ofxFXObject.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

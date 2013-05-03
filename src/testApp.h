@@ -6,6 +6,7 @@
 #include "DirectionFilter.h"
 #include "MotionFilter.h"
 #include "FacesFilter.h"
+#include "TextureFilter.h"
 
 class testApp : public ofBaseApp{
 
@@ -31,13 +32,14 @@ class testApp : public ofBaseApp{
         ofSerial serial;
     
         // Filter subclasses
-        int numFilters = 4;
+        int numFilters = 5;
         ColorFilter color;
         DirectionFilter direction;
         MotionFilter motion;
         FacesFilter faces;
+        TextureFilter texture;
     
         // Filter array
-        Filter * filters[4];
+        Filter * filters[5];
     
 };
