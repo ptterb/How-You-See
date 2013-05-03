@@ -15,6 +15,7 @@
 		686b0df6249b52e1a85b39ecf73c2f55 /* ofxKinect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7ed9ffc7d08da194c2ce7d09224b0953 /* ofxKinect.cpp */; };
 		80a6d051bb53a1425de78d5db4adfbc9 /* registration.c in Sources */ = {isa = PBXBuildFile; fileRef = 38605b4b6c277285d92cd4ec5fdbc49e /* registration.c */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
+		E2A084F81733869900EE9B84 /* ColorFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9B36340172488F9007D02E0 /* ColorFilter.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
 		E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
@@ -38,7 +39,6 @@
 		F958F596172F544A0083E81F /* mask.vert in Sources */ = {isa = PBXBuildFile; fileRef = F958F595172F544A0083E81F /* mask.vert */; };
 		F958F598172F54680083E81F /* mask.frag in Sources */ = {isa = PBXBuildFile; fileRef = F958F597172F54680083E81F /* mask.frag */; };
 		F9B3633F172484B7007D02E0 /* Filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9B3633D172484B7007D02E0 /* Filter.cpp */; };
-		F9B36342172488F9007D02E0 /* ColorFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9B36340172488F9007D02E0 /* ColorFilter.cpp */; };
 		F9B36345172491A1007D02E0 /* DirectionFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9B36343172491A1007D02E0 /* DirectionFilter.cpp */; };
 		F9FC6A00172EB742009F7BCF /* FacesFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9FC69FE172EB742009F7BCF /* FacesFilter.cpp */; };
 		a940aea8338fb9ca375cd607b2292072 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = df3cfb6367f0771d65acded6ba846167 /* core.c */; };
@@ -834,12 +834,12 @@
 				bc626c637c0629535ffeb02fed2f8fc8 /* tilt.c in Sources */,
 				3459f3becfe8cb6a6683889e1690f01a /* usb_libusb10.c in Sources */,
 				F9B3633F172484B7007D02E0 /* Filter.cpp in Sources */,
-				F9B36342172488F9007D02E0 /* ColorFilter.cpp in Sources */,
 				F9B36345172491A1007D02E0 /* DirectionFilter.cpp in Sources */,
 				F902DFBF172A03110031111C /* MotionFilter.cpp in Sources */,
 				F9FC6A00172EB742009F7BCF /* FacesFilter.cpp in Sources */,
 				F958F596172F544A0083E81F /* mask.vert in Sources */,
 				F958F598172F54680083E81F /* mask.frag in Sources */,
+				E2A084F81733869900EE9B84 /* ColorFilter.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1154,6 +1154,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)Debug";
+				SDKROOT = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1240,6 +1241,7 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

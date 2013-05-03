@@ -35,9 +35,9 @@ class testApp : public ofBaseApp{
         ColorFilter color;
         DirectionFilter direction;
         MotionFilter motion;
-    FacesFilter faces;
+        FacesFilter faces;
     
         // Filter array
         Filter * filters[4];
-
+    
 };
