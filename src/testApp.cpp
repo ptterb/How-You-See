@@ -1,5 +1,7 @@
 #include "testApp.h"
-
+#include "ofxOpenCv.h"
+#include "ofxKinect.h"
+#include "ofxFX.h"
 
 
 //--------------------------------------------------------------
@@ -13,7 +15,8 @@ void testApp::setup(){
     filters[2] = &motion;
     filters[3] = &faces;
     filters[4] = &depth;
-    
+    filters[5] = &texture;
+
 }
 
 //--------------------------------------------------------------
@@ -160,21 +163,23 @@ void testApp::keyPressed(int key){
             break;
             
         case 'U':
-            filters[2]->changeLoc(1);
+            filters[5]->changeLoc(1);
             break;
         case 'V':
-            filters[2]->changeLoc(2);
+            filters[5]->changeLoc(2);
             break;
         case 'W':
-            filters[2]->changeLoc(3);
+            filters[5]->changeLoc(3);
             break;
         case 'X':
-            filters[2]->changeLoc(4);
+            filters[5]->changeLoc(4);
             break;
         case '6':
-            filters[2]->changeLoc(0);
+            filters[5]->changeLoc(0);
             break;
-            
+        case'7':
+            texture.bCapture = true;
+            break;
         default:
         break;
     }

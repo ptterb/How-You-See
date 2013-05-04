@@ -7,6 +7,7 @@
 #include "MotionFilter.h"
 #include "FacesFilter.h"
 #include "DepthFilter.h"
+#include "TextureFilter.h"
 #include "Unplugged.h"
 #include "ofxKinect.h"
 
@@ -35,7 +36,7 @@ class testApp : public ofBaseApp{
         ofSerial serial;
     
         // Filter subclasses
-        int numFilters = 5;
+        int numFilters = 6;
         ColorFilter color;
         DirectionFilter direction;
         MotionFilter motion;
@@ -43,9 +44,10 @@ class testApp : public ofBaseApp{
         DepthFilter depth;
     
         // Filter array
-        Filter * filters[5];
+        Filter * filters[6];
+        TextureFilter texture;
     
-    Unplugged unplugged1;
-    Unplugged unplugged2;
+        Unplugged unplugged1;
+        Unplugged unplugged2;
 
 };
