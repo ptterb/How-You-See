@@ -7,3 +7,7 @@ OF_PATH = ../../..
 
 OTHER_LDFLAGS = $(OF_CORE_LIBS) 
 HEADER_SEARCH_PATHS = $(OF_CORE_HEADERS)
+
+// ofxKinect
+OFX_KINECT_HEADERS = "$(ADDONS_PATH)/ofxKinect/libs/libusb/osx/include/"
+OFX_KINECT_LIBS = "$(ADDONS_PATH)/ofxKinect/libs/libusb/osx/libs/usb-1.0.a"
