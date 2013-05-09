@@ -31,13 +31,13 @@ boolean sendChange = true;
 
 const byte blinkm_addr[]={9, 10, 11, 12, 0}; // maxM controller addresses on i2c
 const int areaColors[7][3]={                 // colors for each vision area.
-  {48, 0, 255},                              // vision function 1 color value
-  {0, 255, 0},                               // vision function 2 color value
-  {0, 80, 255},                              // vision function 3 color value
-  {255, 0, 0},                               // vision function 4 color value
-  {255, 0, 150},                             // vision function 5 color value
-  {255, 144, 0},                               // vision function 6 color value
-  {255, 255, 0}};                                // all off
+  {220, 255, 0},                             // YELLOW      - TEXTURE     - vision function 1 color value 
+  {0, 80, 255},                              // LIGHT BLUE  - FACES       - vision function 3 color value
+  {255, 144, 0},                             // ORANGE      - DEPTH       - vision function 6 color value
+  {255, 0, 0},                               // RED         - ORIENTATION - vision function 4 color value
+  {60, 0, 230},                             // PURPLE      - COLOR       - vision function 5 color value 
+  {0, 255, 0},                               // GREEN       - MOTION      - vision function 2 color value
+  {48, 0, 255}};                             // all off
 char currentColors[]={0,0,0,0};              // store last key for state change check
 
 const int operationOn = 2; // button: turn keyboard operation on or off

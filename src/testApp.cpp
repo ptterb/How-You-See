@@ -10,12 +10,14 @@ void testApp::setup(){
     grabber.initGrabber(vidWidth, vidHeight);
     
     // Add filters into the superclass array
-    filters[0] = &color;
-    filters[1] = &direction;
-    filters[2] = &motion;
-    filters[3] = &faces;
-    filters[4] = &depth;
-    filters[5] = &texture;
+    filters[4] = &color;
+
+    filters[3] = &direction;
+    filters[2] = &depth;
+    filters[0] = &texture;
+
+    filters[1] = &faces;
+    filters[5] = &motion;
 
 }
 
@@ -90,10 +92,10 @@ void testApp::keyPressed(int key){
             
         // COLOR
         case 'A':
-            filters[0]->changeLoc(1);
+            filters[0]->changeLoc(2);
             break;
         case 'B':
-            filters[0]->changeLoc(2);
+            filters[0]->changeLoc(1);
             break;
         case 'C':
             filters[0]->changeLoc(3);
@@ -107,10 +109,10 @@ void testApp::keyPressed(int key){
          
         // DIRECTION
         case 'E':
-            filters[1]->changeLoc(1);
+            filters[1]->changeLoc(2);
             break;
         case 'F':
-            filters[1]->changeLoc(2);
+            filters[1]->changeLoc(1);
             break;
         case 'G':
             filters[1]->changeLoc(3);
@@ -124,10 +126,10 @@ void testApp::keyPressed(int key){
             
         // MOTION
         case 'I':
-            filters[2]->changeLoc(1);
+            filters[2]->changeLoc(2);
             break;
         case 'J':
-            filters[2]->changeLoc(2);
+            filters[2]->changeLoc(1);
             break;
         case 'K':
             filters[2]->changeLoc(3);
@@ -141,10 +143,10 @@ void testApp::keyPressed(int key){
             
         // FACES
         case 'M':
-            filters[3]->changeLoc(1);
+            filters[3]->changeLoc(2);
             break;
         case 'N':
-            filters[3]->changeLoc(2);
+            filters[3]->changeLoc(1);
             break;
         case 'O':
             filters[3]->changeLoc(3);
@@ -158,10 +160,10 @@ void testApp::keyPressed(int key){
          
         // DEPTH
         case 'Q':
-            filters[4]->changeLoc(1);
+            filters[4]->changeLoc(2);
             break;
         case 'R':
-            filters[4]->changeLoc(2);
+            filters[4]->changeLoc(1);
             break;
         case 'S':
             filters[4]->changeLoc(3);
@@ -175,10 +177,10 @@ void testApp::keyPressed(int key){
            
         // TEXTURE
         case 'U':
-            filters[5]->changeLoc(1);
+            filters[5]->changeLoc(2);
             break;
         case 'V':
-            filters[5]->changeLoc(2);
+            filters[5]->changeLoc(1);
             break;
         case 'W':
             filters[5]->changeLoc(3);
