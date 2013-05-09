@@ -58,7 +58,7 @@ void Unplugged::draw(float x, float y){
         lineY = lineY - lineSpeed;
     }
 
-    ofLogNotice() << lineY;
+    //ofLogNotice() << lineY;
     
     ofPopMatrix();
 };

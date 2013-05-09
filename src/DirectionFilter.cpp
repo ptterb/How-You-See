@@ -34,10 +34,10 @@ void DirectionFilter::update(){
         cf.findContours(grayImage, 1, grayImage.width*grayImage.height/2, 10, false);
         
         // Print number of blobs
-        ofLogNotice() << cf.nBlobs;
-        if (cf.nBlobs > 0){
-            ofLogNotice() << cf.nBlobs;
-        }
+//        ofLogNotice() << cf.nBlobs;
+//        if (cf.nBlobs > 0){
+//            ofLogNotice() << cf.nBlobs;
+//        }
     }
     
     // Draw into the FBO at 0,0

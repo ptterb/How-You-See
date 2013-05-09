@@ -40,6 +40,9 @@ void testApp::update(){
 
 //--------------------------------------------------------------
 void testApp::draw(){
+    ofBackground(0,0,0);
+    ofPushMatrix();
+    ofTranslate(320, 60); // Center on external screen. Also set in app preferences to open at 900x1440
     
     // TESTING. All the same or mutiple instances?
 //    unplugged1.draw(0, 0);
@@ -73,6 +76,8 @@ void testApp::draw(){
     
     // Live view
     grabber.draw(grabber.width*1.25, grabber.height*.75, -320,240);
+    
+    ofPopMatrix();
    
 }
 
@@ -82,6 +87,8 @@ void testApp::keyPressed(int key){
     
     // Receive the key commands from the arduino leonardo to tell the app which plugs are plugged into what filter.
     switch (key) {
+            
+        // COLOR
         case 'A':
             filters[0]->changeLoc(1);
             break;
@@ -97,7 +104,8 @@ void testApp::keyPressed(int key){
         case '1':
             filters[0]->changeLoc(0);
             break;
-            
+         
+        // DIRECTION
         case 'E':
             filters[1]->changeLoc(1);
             break;
@@ -114,6 +122,7 @@ void testApp::keyPressed(int key){
             filters[1]->changeLoc(0);
             break;
             
+        // MOTION
         case 'I':
             filters[2]->changeLoc(1);
             break;
@@ -130,6 +139,7 @@ void testApp::keyPressed(int key){
             filters[2]->changeLoc(0);
             break;
             
+        // FACES
         case 'M':
             filters[3]->changeLoc(1);
             break;
@@ -145,7 +155,8 @@ void testApp::keyPressed(int key){
         case '4':
             filters[3]->changeLoc(0);
             break;
-            
+         
+        // DEPTH
         case 'Q':
             filters[4]->changeLoc(1);
             break;
@@ -161,7 +172,8 @@ void testApp::keyPressed(int key){
         case '5':
             filters[4]->changeLoc(0);
             break;
-            
+           
+        // TEXTURE
         case 'U':
             filters[5]->changeLoc(1);
             break;

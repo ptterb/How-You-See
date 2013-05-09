@@ -135,4 +135,3 @@ void updateLED(int address, int bArea, char keyPress){
 void idleLED(int address, int program){
   BlinkM_playScript(blinkm_addr[address], program,0,0 );
 }
-
