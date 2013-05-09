@@ -6,19 +6,17 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-        
+    
+    grabber.setDeviceID(1);
     grabber.initGrabber(vidWidth, vidHeight);
     
     // Add filters into the superclass array
-    filters[4] = &color;
-
-    filters[3] = &direction;
-    filters[2] = &depth;
     filters[0] = &texture;
-
     filters[1] = &faces;
+    filters[2] = &depth;
+    filters[3] = &direction;
+    filters[4] = &color;
     filters[5] = &motion;
-
 }
 
 //--------------------------------------------------------------

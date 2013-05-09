@@ -11,6 +11,7 @@
 Filter::Filter(){
     
     // Allocate the grabber and FBO
+    grabber.setDeviceID(1);
     grabber.initGrabber(vWidth, vHeight);
     fbo.allocate(vWidth, vHeight);
     
