@@ -72,7 +72,7 @@ h1.title {
   font-size: 60px;
   font-weight: bold;
   font-style: italic;
-  font-family:Georgia, serif;
+  font-family:"proxima-nova", Helvetica, sans-serif;
   text-align: center;
 }
 
@@ -334,7 +334,7 @@ footer .owner img {
 }
 
 footer .owner p {
-  font-family:Georgia, serif;
+  font-family: "proxima-nova", Helvetica, sans-serif;
 }
 
 footer .owner p a {
@@ -393,7 +393,7 @@ footer .owner p a {
   padding: 10px 70px 10px 0;
   margin-left: -20px;
   margin-right: -20px;
-  font-family: 'Monaco', 'Lucida Console', monospace;
+  font-family: "proxima-nova", Helvetica, sans-serif;
   font-size: 13px;
   line-height: 20px;
   box-shadow: inset 0 0 5px #000;
@@ -493,7 +493,7 @@ footer .owner p a {
 
 .markdown-body blockquote {
   font-style: italic;
-  font-family:Georgia, serif;
+  font-family:"proxima-nova", Helvetica, sans-serif;
   font-size: 17px;
   border-top: 3px solid #333;
   border-bottom: 3px solid #333;
@@ -503,7 +503,7 @@ footer .owner p a {
 
 .markdown-body blockquote:before {
   font-style: italic;
-  font-family: Georgia, serif;
+  font-family: "proxima-nova", Helvetica, sans-serif;
   font-size: 90px;
   height: 90px;
   margin-left: -60px;
