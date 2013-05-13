@@ -28,3 +28,16 @@ void Filter::changeLoc(int _location){
     
 };
 
+////--------------------------------------------------------------
+//string Filter::loadDesc(string name){
+//    
+//    // Open the file, read in the text and return as a string
+//    ofFile file;
+//    
+//    file.open("../../../data/color.txt", ofFile::ReadOnly, false);
+//    ofBuffer buff = file.readToBuffer();
+//    
+//    return buff.getText();
+//    
+//}
+

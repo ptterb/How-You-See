@@ -20,6 +20,11 @@ void testApp::setup(){
     filters[3] = &direction;
     filters[4] = &color;
     filters[5] = &motion;
+    
+    // Load descriptions of each filter
+    ofLogNotice() << filters[4]->title;
+    ofLogNotice() << filters[4]->desc;
+
 }
 
 //--------------------------------------------------------------
@@ -53,27 +58,33 @@ void testApp::draw(){
 //    unplugged1.draw(0, 480);
 //    unplugged1.draw(640, 480);
 
-    // Draw out the filters that are chosen
+    // Draw out the filters that are chosen.
+    // The frame size and offset and included here to position the filters correctly.
+    // This looks confusing, so edit the frameSize and x/yOffset to move them around
     for (int i = 0; i < numFilters; i++){
         
         // Quad 1
         if (filters[i]->location == 1){
-            filters[i]->draw(0,0);
+            ofRect(-frameSize - xOffSet, -frameSize - yOffset, vidWidth + (frameSize * 2) , vidHeight + (frameSize * 2));
+            filters[i]->draw(-xOffSet, -yOffset);
         }
         
         // Quad 2
         else if (filters[i]->location == 2){
-            filters[i]->draw(vidWidth,0);
+            ofRect(vidWidth - frameSize + xOffSet, -frameSize - yOffset, vidWidth + (frameSize * 2) , vidHeight + (frameSize * 2));
+            filters[i]->draw(vidWidth + xOffSet, -yOffset);
         }
         
         // Quad 3
         else if (filters[i]->location == 3){
-            filters[i]->draw(0,vidHeight);
+            ofRect(-frameSize - xOffSet, vidHeight - frameSize + yOffset, vidWidth + (frameSize * 2) , vidHeight + (frameSize * 2));
+            filters[i]->draw(-xOffSet, vidHeight + yOffset);
         }
         
         // Quad 4
         else if (filters[i]->location == 4){
-            filters[i]->draw(vidWidth,vidHeight);
+            ofRect(vidWidth - frameSize + xOffSet, vidHeight - frameSize + yOffset, vidWidth + (frameSize * 2) , vidHeight + (frameSize * 2));
+            filters[i]->draw(vidWidth + xOffSet, vidHeight + yOffset);
         }
     }
     

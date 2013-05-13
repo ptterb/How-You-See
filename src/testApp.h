@@ -49,5 +49,12 @@ class testApp : public ofBaseApp{
     
         Unplugged unplugged1;
         Unplugged unplugged2;
+    
+    
+    int frameSize = 10;
+    int xOffSet = 30;
+    int yOffset = 30;
+    
+    string desc[6];
 
 };

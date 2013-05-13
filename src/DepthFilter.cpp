@@ -13,6 +13,10 @@
 
 DepthFilter::DepthFilter(){
     
+    // Load title and description
+    title = "Depth";
+    desc = loadDesc("depth");
+    
     // enable depth->video image calibration
 	kinect.setRegistration(true);
 	kinect.init();
@@ -28,6 +32,19 @@ void DepthFilter::update(){
 	
 	kinect.update();
     
+    // AutoPan the camera
+    if (dir) {
+        if (degrees <= maxDeg) {
+            degrees += 10;
+        }
+    }
+    else {
+        if (degrees >= minDeg){
+            degrees -= 10;
+        }
+    }
+    
+    
 };
 
 void DepthFilter::draw(float x, float y){
@@ -35,6 +52,7 @@ void DepthFilter::draw(float x, float y){
     fbo.begin();
     ofClear(0, 0, 0, 0);
     easyCam.begin();
+    easyCam.pan(degrees);
     drawPointCloud();
     easyCam.end();
     fbo.end();
@@ -66,4 +84,17 @@ void DepthFilter::drawPointCloud() {
 	mesh.drawVertices();
 	glDisable(GL_DEPTH_TEST);
 	ofPopMatrix();
+}
+
+//--------------------------------------------------------------
+string DepthFilter::loadDesc(string name){
+    
+    // Open the file, read in the text and return as a string
+    ofFile file;
+    
+    file.open("../../../data/" + name + ".txt", ofFile::ReadOnly, false);
+    ofBuffer buff = file.readToBuffer();
+    
+    return buff.getText();
+    
 }

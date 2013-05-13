@@ -12,6 +12,10 @@ TextureFilter::TextureFilter(){
     
     // This is where you set up the filter. Any variables that need to be allocated should be done here.
     
+    // Load title and description
+    title = "Texture";
+    desc = loadDesc("texture");
+    
     grayscale.allocate(vWidth, vHeight);
     blur.allocate(vWidth, vHeight);
     blur.setRadius(10);
@@ -76,4 +80,17 @@ void TextureFilter::draw(float x, float y) {
     fbo.draw(x + vWidth, y, -vWidth, vHeight);
     
 
+}
+
+//--------------------------------------------------------------
+string TextureFilter::loadDesc(string name){
+    
+    // Open the file, read in the text and return as a string
+    ofFile file;
+    
+    file.open("../../../data/" + name + ".txt", ofFile::ReadOnly, false);
+    ofBuffer buff = file.readToBuffer();
+    
+    return buff.getText();
+    
 }

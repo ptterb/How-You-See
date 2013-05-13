@@ -23,6 +23,7 @@ public:
     
     void update();
     void draw(float x, float y);
+    string loadDesc(string name);
     
     DirectionFilter();
     

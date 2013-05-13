@@ -27,6 +27,7 @@ public:
     DepthFilter();
     void update();
     void draw(float x, float y);
+    string loadDesc(string name);
     
     void exit();
 	
@@ -45,5 +46,10 @@ public:
     
     // used for viewing the point cloud
 	ofEasyCam easyCam;
+    
+    float degrees;
+    bool dir;
+    float maxDeg;
+    float minDeg;
 
 };

@@ -16,9 +16,14 @@
 
 ColorFilter::ColorFilter(){
     
+    // Load title and description
+    title = "Color";
+    desc = loadDesc("color");
+    
     // This is where you set up the filter. Any variables that need to be allocated should be done here.
     
     colorImage.allocate(vWidth, vHeight);
+    
     // Initialize fonts
     filterfont.loadFont("futura.ttf", 32, true);
 };
@@ -67,3 +72,16 @@ void ColorFilter::draw(float x, float y) {
 
 
 };
+
+//--------------------------------------------------------------
+string ColorFilter::loadDesc(string name){
+    
+    // Open the file, read in the text and return as a string
+    ofFile file;
+    
+    file.open("../../../data/" + name + ".txt", ofFile::ReadOnly, false);
+    ofBuffer buff = file.readToBuffer();
+    
+    return buff.getText();
+    
+}

@@ -10,7 +10,14 @@
 
 DirectionFilter::DirectionFilter(){
     
+    
+    
     // This is where you set up the filter. Any variables that need to be allocated should be done here.
+    
+    // Load title and description
+    title = "Orientation";
+    desc = loadDesc("orientation");
+    
     
     colorImage.allocate(vWidth, vHeight);
     grayImage.allocate(vWidth, vHeight);
@@ -61,3 +68,16 @@ void DirectionFilter::draw(float x, float y) {
     
     
 };
+
+//--------------------------------------------------------------
+string DirectionFilter::loadDesc(string name){
+    
+    // Open the file, read in the text and return as a string
+    ofFile file;
+    
+    file.open("../../../data/" + name + ".txt", ofFile::ReadOnly, false);
+    ofBuffer buff = file.readToBuffer();
+    
+    return buff.getText();
+    
+}

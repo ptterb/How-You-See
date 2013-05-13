@@ -12,6 +12,10 @@ FacesFilter::FacesFilter(){
     
     // This is where you set up the filter. Any variables that need to be allocated should be done here.
     
+    // Load title and description
+    title = "Faces";
+    desc = loadDesc("faces");
+    
     //need this for alpha to come through
 	ofEnableAlphaBlending();
     
@@ -126,10 +130,17 @@ void FacesFilter::draw(float x, float y) {
 	}
     
     ofPopMatrix();
-    
-    
-	
-    
-    
-    
 };
+
+//--------------------------------------------------------------
+string FacesFilter::loadDesc(string name){
+    
+    // Open the file, read in the text and return as a string
+    ofFile file;
+    
+    file.open("../../../data/" + name + ".txt", ofFile::ReadOnly, false);
+    ofBuffer buff = file.readToBuffer();
+    
+    return buff.getText();
+    
+}
