@@ -41,7 +41,7 @@ public:
     ofxKinect kinect;
 	
     //ADJUST WHEN SET IN FRAME
-	int angle = 13;
+	int angle = 0;
     
     // used for viewing the point cloud
 	ofEasyCam easyCam;
