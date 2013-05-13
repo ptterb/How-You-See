@@ -91,7 +91,7 @@ void testApp::keyPressed(int key){
     // Receive the key commands from the arduino leonardo to tell the app which plugs are plugged into what filter.
     switch (key) {
             
-        // COLOR
+        // TEXTURE
         case 'A':
             filters[0]->changeLoc(2);
             break;
@@ -108,7 +108,7 @@ void testApp::keyPressed(int key){
             filters[0]->changeLoc(0);
             break;
          
-        // DIRECTION
+        // FACES
         case 'E':
             filters[1]->changeLoc(2);
             break;
@@ -125,7 +125,7 @@ void testApp::keyPressed(int key){
             filters[1]->changeLoc(0);
             break;
             
-        // MOTION
+        // DEPTH
         case 'I':
             filters[2]->changeLoc(2);
             break;
@@ -142,7 +142,7 @@ void testApp::keyPressed(int key){
             filters[2]->changeLoc(0);
             break;
             
-        // FACES
+        // DIRECTION
         case 'M':
             filters[3]->changeLoc(2);
             break;
@@ -159,7 +159,7 @@ void testApp::keyPressed(int key){
             filters[3]->changeLoc(0);
             break;
          
-        // DEPTH
+        // COLOR
         case 'Q':
             filters[4]->changeLoc(2);
             break;
@@ -176,7 +176,7 @@ void testApp::keyPressed(int key){
             filters[4]->changeLoc(0);
             break;
            
-        // TEXTURE
+        // MOTION
         case 'U':
             filters[5]->changeLoc(2);
             break;

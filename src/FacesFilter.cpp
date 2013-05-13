@@ -63,6 +63,13 @@ void FacesFilter::draw(float x, float y) {
 	camImage.draw(0, 0);
 	
     
+    //Check if any faces found. If not, black out screen
+    if (finder.blobs.size() < 1) {
+        ofSetColor(0, 0, 0);
+        ofRect(0, 0, 640, 480);
+        ofSetColor(255, 255, 255);
+    }
+    
     // Draw spotlight on faces found
 	for(int i = 0; i < finder.blobs.size(); i++) {
         
