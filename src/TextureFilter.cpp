@@ -57,18 +57,13 @@ void TextureFilter::update(){
     // Draw into the FBO
     fbo.begin();
         
-            ofSetColor(255);
-        if ( bDrawVideo ){
-            grabber.draw(0,0,vWidth, vHeight);
-            ofSetColor(255,200);
-        }
-    
-        disp.draw(0,0,vWidth,vHeight);
+    ofSetColor(255);
+    disp.draw(0,0,vWidth,vHeight);
 
-        if ( bDrawNormals ){
-            ofSetColor(255);
-            normals.draw(0,0);
-        }
+    if ( bDrawNormals ){
+        ofSetColor(255);
+        normals.draw(0,0);
+    }
     fbo.end();
 
 }
@@ -78,7 +73,7 @@ void TextureFilter::update(){
 void TextureFilter::draw(float x, float y) {
     
     // Draw the filter to the screen.
-    fbo.draw(x, y);
+    fbo.draw(x + vWidth, y, -vWidth, vHeight);
     
 
 }

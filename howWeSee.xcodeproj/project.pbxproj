@@ -42,6 +42,52 @@
 		F902DFBF172A03110031111C /* MotionFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F902DFBD172A03110031111C /* MotionFilter.cpp */; };
 		F958F596172F544A0083E81F /* mask.vert in Sources */ = {isa = PBXBuildFile; fileRef = F958F595172F544A0083E81F /* mask.vert */; };
 		F958F598172F54680083E81F /* mask.frag in Sources */ = {isa = PBXBuildFile; fileRef = F958F597172F54680083E81F /* mask.frag */; };
+		F95EF41B173C297E00D64014 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
+		F95EF41C173C297E00D64014 /* testApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */; };
+		F95EF41D173C297E00D64014 /* ofxCvColorImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ce9c7160245b19131dae61282ee6cb53 /* ofxCvColorImage.cpp */; };
+		F95EF41E173C297E00D64014 /* ofxCvContourFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = c76de5c29bdbd2caa1dd0021a7376220 /* ofxCvContourFinder.cpp */; };
+		F95EF41F173C297E00D64014 /* ofxCvFloatImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7b6a03390302d5a2c9f0e4ab630ae8d6 /* ofxCvFloatImage.cpp */; };
+		F95EF420173C297E00D64014 /* ofxCvGrayscaleImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 057122a817d12571f8c0c7a4d522b879 /* ofxCvGrayscaleImage.cpp */; };
+		F95EF421173C297E00D64014 /* ofxCvHaarFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9a16cbf2e8cfe43af54fe6f55efbf8a4 /* ofxCvHaarFinder.cpp */; };
+		F95EF422173C297E00D64014 /* ofxCvImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = c6151136d101f857dae12722e3c42f4a /* ofxCvImage.cpp */; };
+		F95EF423173C297E00D64014 /* ofxCvShortImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8a4dd23693dfab8ec05faa5d62c49d8c /* ofxCvShortImage.cpp */; };
+		F95EF424173C297E00D64014 /* ofxKinect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7ed9ffc7d08da194c2ce7d09224b0953 /* ofxKinect.cpp */; };
+		F95EF425173C297E00D64014 /* cameras.c in Sources */ = {isa = PBXBuildFile; fileRef = 3824859c5a24841e8aaae47e3c156bb9 /* cameras.c */; };
+		F95EF426173C297E00D64014 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = df3cfb6367f0771d65acded6ba846167 /* core.c */; };
+		F95EF427173C297E00D64014 /* registration.c in Sources */ = {isa = PBXBuildFile; fileRef = 38605b4b6c277285d92cd4ec5fdbc49e /* registration.c */; };
+		F95EF428173C297E00D64014 /* tilt.c in Sources */ = {isa = PBXBuildFile; fileRef = 797abdbfddc99d927288b466d8511e0f /* tilt.c */; };
+		F95EF429173C297E00D64014 /* usb_libusb10.c in Sources */ = {isa = PBXBuildFile; fileRef = f6e2c302207d61564228b7b1fa9ee346 /* usb_libusb10.c */; };
+		F95EF42A173C297E00D64014 /* Filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9B3633D172484B7007D02E0 /* Filter.cpp */; };
+		F95EF42B173C297E00D64014 /* DirectionFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9B36343172491A1007D02E0 /* DirectionFilter.cpp */; };
+		F95EF42C173C297E00D64014 /* MotionFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F902DFBD172A03110031111C /* MotionFilter.cpp */; };
+		F95EF42D173C297E00D64014 /* FacesFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9FC69FE172EB742009F7BCF /* FacesFilter.cpp */; };
+		F95EF42E173C297E00D64014 /* mask.vert in Sources */ = {isa = PBXBuildFile; fileRef = F958F595172F544A0083E81F /* mask.vert */; };
+		F95EF42F173C297E00D64014 /* mask.frag in Sources */ = {isa = PBXBuildFile; fileRef = F958F597172F54680083E81F /* mask.frag */; };
+		F95EF430173C297E00D64014 /* Unplugged.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9E5B5501733CB690095784F /* Unplugged.cpp */; };
+		F95EF431173C297E00D64014 /* DepthFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9E5B554173410130095784F /* DepthFilter.cpp */; };
+		F95EF432173C297E00D64014 /* ColorFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9B36340172488F9007D02E0 /* ColorFilter.cpp */; };
+		F95EF433173C297E00D64014 /* TextureFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A084FB1734582200EE9B84 /* TextureFilter.cpp */; };
+		F95EF434173C297E00D64014 /* ofxFlocking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A0851A1734595100EE9B84 /* ofxFlocking.cpp */; };
+		F95EF435173C297E00D64014 /* ofxFluid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A0851C1734595100EE9B84 /* ofxFluid.cpp */; };
+		F95EF436173C297E00D64014 /* ofxFXObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A0851F1734595100EE9B84 /* ofxFXObject.cpp */; };
+		F95EF438173C297E00D64014 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F985F515E0DE99003869B5 /* Accelerate.framework */; };
+		F95EF439173C297E00D64014 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E715D3B6510020DFD4 /* QTKit.framework */; };
+		F95EF43A173C297E00D64014 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
+		F95EF43B173C297E00D64014 /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
+		F95EF43C173C297E00D64014 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
+		F95EF43D173C297E00D64014 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
+		F95EF43E173C297E00D64014 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9730E8CC7DD009D7055 /* AudioToolbox.framework */; };
+		F95EF43F173C297E00D64014 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9740E8CC7DD009D7055 /* Carbon.framework */; };
+		F95EF440173C297E00D64014 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9750E8CC7DD009D7055 /* CoreAudio.framework */; };
+		F95EF441173C297E00D64014 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9760E8CC7DD009D7055 /* CoreFoundation.framework */; };
+		F95EF442173C297E00D64014 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9770E8CC7DD009D7055 /* CoreServices.framework */; };
+		F95EF443173C297E00D64014 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9790E8CC7DD009D7055 /* OpenGL.framework */; };
+		F95EF444173C297E00D64014 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */; };
+		F95EF445173C297E00D64014 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424410CC5A17004149E2 /* AppKit.framework */; };
+		F95EF446173C297E00D64014 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424510CC5A17004149E2 /* Cocoa.framework */; };
+		F95EF447173C297E00D64014 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424610CC5A17004149E2 /* IOKit.framework */; };
+		F95EF448173C297E00D64014 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */; };
+		F95EF44B173C297E00D64014 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		F9B3633F172484B7007D02E0 /* Filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9B3633D172484B7007D02E0 /* Filter.cpp */; };
 		F9B36345172491A1007D02E0 /* DirectionFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9B36343172491A1007D02E0 /* DirectionFilter.cpp */; };
 		F9E5B5521733CB690095784F /* Unplugged.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9E5B5501733CB690095784F /* Unplugged.cpp */; };
@@ -70,6 +116,13 @@
 			remoteGlobalIDString = E4B27C1410CBEB8E00536013;
 			remoteInfo = openFrameworks;
 		};
+		F95EF419173C297E00D64014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4B27C1410CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -80,6 +133,16 @@
 			dstSubfolderSpec = 10;
 			files = (
 				BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F95EF44A173C297E00D64014 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F95EF44B173C297E00D64014 /* GLUT.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +286,25 @@
 		F958F590172F4BAE0083E81F /* howWeSeeDebug.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = howWeSeeDebug.app; sourceTree = "<group>"; };
 		F958F595172F544A0083E81F /* mask.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = mask.vert; sourceTree = "<group>"; };
 		F958F597172F54680083E81F /* mask.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = mask.frag; sourceTree = "<group>"; };
+		F95EF3E5173C290A00D64014 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F95EF3E8173C290A00D64014 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F95EF3E9173C290A00D64014 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F95EF3EA173C290A00D64014 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F95EF3ED173C290A00D64014 /* HowYouSee-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HowYouSee-Info.plist"; sourceTree = "<group>"; };
+		F95EF3EF173C290A00D64014 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F95EF3F1173C290A00D64014 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F95EF3F3173C290A00D64014 /* HowYouSee-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HowYouSee-Prefix.pch"; sourceTree = "<group>"; };
+		F95EF3F5173C290A00D64014 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F95EF3F7173C290A00D64014 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F95EF3F8173C290A00D64014 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F95EF3FB173C290A00D64014 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F95EF403173C290A00D64014 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F95EF40A173C290A00D64014 /* HowYouSeeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HowYouSeeTests-Info.plist"; sourceTree = "<group>"; };
+		F95EF40C173C290A00D64014 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F95EF40E173C290B00D64014 /* HowYouSeeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HowYouSeeTests.h; sourceTree = "<group>"; };
+		F95EF40F173C290B00D64014 /* HowYouSeeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HowYouSeeTests.m; sourceTree = "<group>"; };
+		F95EF44F173C297E00D64014 /* howWeSee copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "howWeSee copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F95EF450173C297E00D64014 /* howWeSee copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "howWeSee copy-Info.plist"; path = "/Users/tterb/of_v0073_osx_release/apps/myApps/howWeSee/howWeSee copy-Info.plist"; sourceTree = "<absolute>"; };
 		F9B3633D172484B7007D02E0 /* Filter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Filter.cpp; sourceTree = "<group>"; };
 		F9B3633E172484B7007D02E0 /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filter.h; sourceTree = "<group>"; };
 		F9B36340172488F9007D02E0 /* ColorFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorFilter.cpp; sourceTree = "<group>"; };
@@ -310,6 +392,30 @@
 				E4C2424810CC5A17004149E2 /* Cocoa.framework in Frameworks */,
 				E4C2424910CC5A17004149E2 /* IOKit.framework in Frameworks */,
 				E7E077E515D3B63C0020DFD4 /* CoreVideo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F95EF437173C297E00D64014 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F95EF438173C297E00D64014 /* Accelerate.framework in Frameworks */,
+				F95EF439173C297E00D64014 /* QTKit.framework in Frameworks */,
+				F95EF43A173C297E00D64014 /* GLUT.framework in Frameworks */,
+				F95EF43B173C297E00D64014 /* openFrameworksDebug.a in Frameworks */,
+				F95EF43C173C297E00D64014 /* AGL.framework in Frameworks */,
+				F95EF43D173C297E00D64014 /* ApplicationServices.framework in Frameworks */,
+				F95EF43E173C297E00D64014 /* AudioToolbox.framework in Frameworks */,
+				F95EF43F173C297E00D64014 /* Carbon.framework in Frameworks */,
+				F95EF440173C297E00D64014 /* CoreAudio.framework in Frameworks */,
+				F95EF441173C297E00D64014 /* CoreFoundation.framework in Frameworks */,
+				F95EF442173C297E00D64014 /* CoreServices.framework in Frameworks */,
+				F95EF443173C297E00D64014 /* OpenGL.framework in Frameworks */,
+				F95EF444173C297E00D64014 /* QuickTime.framework in Frameworks */,
+				F95EF445173C297E00D64014 /* AppKit.framework in Frameworks */,
+				F95EF446173C297E00D64014 /* Cocoa.framework in Frameworks */,
+				F95EF447173C297E00D64014 /* IOKit.framework in Frameworks */,
+				F95EF448173C297E00D64014 /* CoreVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,6 +810,11 @@
 				BB4B014C10F69532006C3DED /* addons */,
 				E45BE5980E8CC70C009D7055 /* frameworks */,
 				E4B69B5B0A3A1756003C02F2 /* howWeSeeDebug.app */,
+				F95EF3EB173C290A00D64014 /* HowYouSee */,
+				F95EF408173C290A00D64014 /* HowYouSeeTests */,
+				F95EF3E4173C290A00D64014 /* Frameworks */,
+				F95EF44F173C297E00D64014 /* howWeSee copy.app */,
+				F95EF450173C297E00D64014 /* howWeSee copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -750,6 +861,68 @@
 				F958F597172F54680083E81F /* mask.frag */,
 			);
 			path = data;
+			sourceTree = "<group>";
+		};
+		F95EF3E4173C290A00D64014 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F95EF3E5173C290A00D64014 /* Cocoa.framework */,
+				F95EF403173C290A00D64014 /* SenTestingKit.framework */,
+				F95EF3E7173C290A00D64014 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F95EF3E7173C290A00D64014 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F95EF3E8173C290A00D64014 /* AppKit.framework */,
+				F95EF3E9173C290A00D64014 /* CoreData.framework */,
+				F95EF3EA173C290A00D64014 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F95EF3EB173C290A00D64014 /* HowYouSee */ = {
+			isa = PBXGroup;
+			children = (
+				F95EF3F7173C290A00D64014 /* AppDelegate.h */,
+				F95EF3F8173C290A00D64014 /* AppDelegate.m */,
+				F95EF3FA173C290A00D64014 /* MainMenu.xib */,
+				F95EF3EC173C290A00D64014 /* Supporting Files */,
+			);
+			path = HowYouSee;
+			sourceTree = "<group>";
+		};
+		F95EF3EC173C290A00D64014 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F95EF3ED173C290A00D64014 /* HowYouSee-Info.plist */,
+				F95EF3EE173C290A00D64014 /* InfoPlist.strings */,
+				F95EF3F1173C290A00D64014 /* main.m */,
+				F95EF3F3173C290A00D64014 /* HowYouSee-Prefix.pch */,
+				F95EF3F4173C290A00D64014 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F95EF408173C290A00D64014 /* HowYouSeeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F95EF40E173C290B00D64014 /* HowYouSeeTests.h */,
+				F95EF40F173C290B00D64014 /* HowYouSeeTests.m */,
+				F95EF409173C290A00D64014 /* Supporting Files */,
+			);
+			path = HowYouSeeTests;
+			sourceTree = "<group>";
+		};
+		F95EF409173C290A00D64014 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F95EF40A173C290A00D64014 /* HowYouSeeTests-Info.plist */,
+				F95EF40B173C290A00D64014 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		F9B363461724B970007D02E0 /* filters */ = {
@@ -913,6 +1086,25 @@
 			productReference = E4B69B5B0A3A1756003C02F2 /* howWeSeeDebug.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F95EF417173C297E00D64014 /* howWeSee copy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F95EF44C173C297E00D64014 /* Build configuration list for PBXNativeTarget "howWeSee copy" */;
+			buildPhases = (
+				F95EF41A173C297E00D64014 /* Sources */,
+				F95EF437173C297E00D64014 /* Frameworks */,
+				F95EF449173C297E00D64014 /* ShellScript */,
+				F95EF44A173C297E00D64014 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F95EF418173C297E00D64014 /* PBXTargetDependency */,
+			);
+			name = "howWeSee copy";
+			productName = myOFApp;
+			productReference = F95EF44F173C297E00D64014 /* howWeSee copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -927,6 +1119,7 @@
 				Japanese,
 				French,
 				German,
+				en,
 			);
 			mainGroup = E4B69B4A0A3A1720003C02F2;
 			productRefGroup = E4B69B4A0A3A1720003C02F2;
@@ -940,6 +1133,7 @@
 			projectRoot = "";
 			targets = (
 				E4B69B5A0A3A1756003C02F2 /* howWeSee */,
+				F95EF417173C297E00D64014 /* howWeSee copy */,
 			);
 		};
 /* End PBXProject section */
@@ -967,6 +1161,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "cp -f ../../../libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/libfmodex.dylib\"; install_name_tool -change ./libfmodex.dylib @executable_path/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";";
+		};
+		F95EF449173C297E00D64014 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -f ../../../libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/libfmodex.dylib\"; install_name_tool -change ./libfmodex.dylib @executable_path/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\ncp -r bin/data \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources\";";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1006,6 +1213,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F95EF41A173C297E00D64014 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F95EF41B173C297E00D64014 /* main.cpp in Sources */,
+				F95EF41C173C297E00D64014 /* testApp.cpp in Sources */,
+				F95EF41D173C297E00D64014 /* ofxCvColorImage.cpp in Sources */,
+				F95EF41E173C297E00D64014 /* ofxCvContourFinder.cpp in Sources */,
+				F95EF41F173C297E00D64014 /* ofxCvFloatImage.cpp in Sources */,
+				F95EF420173C297E00D64014 /* ofxCvGrayscaleImage.cpp in Sources */,
+				F95EF421173C297E00D64014 /* ofxCvHaarFinder.cpp in Sources */,
+				F95EF422173C297E00D64014 /* ofxCvImage.cpp in Sources */,
+				F95EF423173C297E00D64014 /* ofxCvShortImage.cpp in Sources */,
+				F95EF424173C297E00D64014 /* ofxKinect.cpp in Sources */,
+				F95EF425173C297E00D64014 /* cameras.c in Sources */,
+				F95EF426173C297E00D64014 /* core.c in Sources */,
+				F95EF427173C297E00D64014 /* registration.c in Sources */,
+				F95EF428173C297E00D64014 /* tilt.c in Sources */,
+				F95EF429173C297E00D64014 /* usb_libusb10.c in Sources */,
+				F95EF42A173C297E00D64014 /* Filter.cpp in Sources */,
+				F95EF42B173C297E00D64014 /* DirectionFilter.cpp in Sources */,
+				F95EF42C173C297E00D64014 /* MotionFilter.cpp in Sources */,
+				F95EF42D173C297E00D64014 /* FacesFilter.cpp in Sources */,
+				F95EF42E173C297E00D64014 /* mask.vert in Sources */,
+				F95EF42F173C297E00D64014 /* mask.frag in Sources */,
+				F95EF430173C297E00D64014 /* Unplugged.cpp in Sources */,
+				F95EF431173C297E00D64014 /* DepthFilter.cpp in Sources */,
+				F95EF432173C297E00D64014 /* ColorFilter.cpp in Sources */,
+				F95EF433173C297E00D64014 /* TextureFilter.cpp in Sources */,
+				F95EF434173C297E00D64014 /* ofxFlocking.cpp in Sources */,
+				F95EF435173C297E00D64014 /* ofxFluid.cpp in Sources */,
+				F95EF436173C297E00D64014 /* ofxFXObject.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1014,7 +1256,47 @@
 			name = openFrameworks;
 			targetProxy = E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */;
 		};
+		F95EF418173C297E00D64014 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = openFrameworks;
+			targetProxy = F95EF419173C297E00D64014 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F95EF3EE173C290A00D64014 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F95EF3EF173C290A00D64014 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F95EF3F4173C290A00D64014 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F95EF3F5173C290A00D64014 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F95EF3FA173C290A00D64014 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F95EF3FB173C290A00D64014 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		F95EF40B173C290A00D64014 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F95EF40C173C290A00D64014 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E4B69B4E0A3A1720003C02F2 /* Debug */ = {
@@ -1475,6 +1757,249 @@
 			};
 			name = Release;
 		};
+		F95EF44D173C297E00D64014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INFOPLIST_FILE = "howWeSee copy-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_14)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_15)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_16)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_17)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_18)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_19)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_20)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_21)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_22)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_23)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_24)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_25)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_26)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_27)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_28)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_29)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_30)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_31)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_32)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_33)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_34)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_35)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_36)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_37)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_38)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_39)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_40)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_41)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_42)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_43)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_44)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_45)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_46)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_47)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_48)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_49)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_50)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_52)",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_14)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_15)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_16)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_17)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_18)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_19)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_20)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_21)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_22)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_23)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_24)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_25)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_26)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_27)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_28)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_29)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_30)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_31)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_32)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_33)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_34)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_35)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_36)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_37)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_38)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_39)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_40)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_41)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_42)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_43)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_44)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_45)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_46)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_47)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_48)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_49)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_50)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_52)",
+				);
+				New_Setting = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				PRODUCT_NAME = "howWeSee copy";
+				SDKROOT = macosx10.7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F95EF44E173C297E00D64014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INFOPLIST_FILE = "howWeSee copy-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_14)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_15)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_16)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_17)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_18)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_19)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_20)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_21)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_22)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_23)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_24)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_25)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_26)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_27)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_28)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_29)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_30)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_31)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_32)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_33)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_34)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_35)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_36)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_37)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_38)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_39)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_40)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_41)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_42)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_43)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_44)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_45)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_46)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_47)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_48)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_49)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_50)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
+				);
+				New_Setting = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				PRODUCT_NAME = "howWeSee copy";
+				SDKROOT = macosx10.7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1492,6 +2017,15 @@
 			buildConfigurations = (
 				E4B69B600A3A1757003C02F2 /* Debug */,
 				E4B69B610A3A1757003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F95EF44C173C297E00D64014 /* Build configuration list for PBXNativeTarget "howWeSee copy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F95EF44D173C297E00D64014 /* Debug */,
+				F95EF44E173C297E00D64014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
