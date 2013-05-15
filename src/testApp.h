@@ -55,6 +55,13 @@ class testApp : public ofBaseApp{
     int xOffSet = 30;
     int yOffset = 30;
     
+    int titleOffsetX = 300;
+    int titleOffsetY = 5;
+    
     string desc[6];
+    
+    // Filter font
+    ofTrueTypeFont filterTitle;
+    ofTrueTypeFont filterDesc;
 
 };

@@ -24,8 +24,6 @@ ColorFilter::ColorFilter(){
     
     colorImage.allocate(vWidth, vHeight);
     
-    // Initialize fonts
-    filterfont.loadFont("futura.ttf", 32, true);
 };
 
 void ColorFilter::update(){
@@ -58,7 +56,6 @@ void ColorFilter::update(){
     // Draw into the FBO
     fbo.begin();
     colorImage.draw(0, 0);
-    filterfont.drawString("color", vWidth/2,400);
     fbo.end();
     
     
@@ -73,7 +70,7 @@ void ColorFilter::draw(float x, float y) {
 
 };
 
-//--------------------------------------------------------------
+// TODO: THIS COULD GO IN THE FILTER SUPERCLASS. WASN'T WORKING, TRY AGAIN LATER
 string ColorFilter::loadDesc(string name){
     
     // Open the file, read in the text and return as a string

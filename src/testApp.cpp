@@ -6,9 +6,7 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-    
-    ofDisableDataPath();
-    
+        
     // WHEN RUNNING ON LAPTOP WITH BUILT-IN CAMERA, UNCOMMENT THE FOLLOWING LINE
     //grabber.setDeviceID(1);
     grabber.initGrabber(vidWidth, vidHeight);
@@ -24,6 +22,10 @@ void testApp::setup(){
     // Load descriptions of each filter
     ofLogNotice() << filters[4]->title;
     ofLogNotice() << filters[4]->desc;
+    
+    // Initialize fonts
+    filterTitle.loadFont("Gotham-Bold.ttf", 32, true);
+    filterDesc.loadFont("Gotham-Medium.ttf", 16, true);
 
 }
 
@@ -63,32 +65,75 @@ void testApp::draw(){
     // This looks confusing, so edit the frameSize and x/yOffset to move them around
     for (int i = 0; i < numFilters; i++){
         
+        int stringLen = filterTitle.stringWidth(filters[i]->title);
+        int titleHeight = filterTitle.stringHeight(filters[i]->title);
+        
         // Quad 1
         if (filters[i]->location == 1){
+            
+            // Title
+            filterTitle.drawString(filters[i]->title, -titleOffsetX, -titleOffsetY);
+            
+            // Description
+            filterDesc.drawString(filters[i]->desc, -titleOffsetX, -titleOffsetY + titleHeight );
+            
+            // Frame
             ofRect(-frameSize - xOffSet, -frameSize - yOffset, vidWidth + (frameSize * 2) , vidHeight + (frameSize * 2));
+            
+            // Filter
             filters[i]->draw(-xOffSet, -yOffset);
         }
         
         // Quad 2
         else if (filters[i]->location == 2){
+            
+            // Title
+            filterTitle.drawString(filters[i]->title, (vidWidth * 2) + titleOffsetX - stringLen, -titleOffsetY);
+            
+            // Description
+            
+            // Frame
             ofRect(vidWidth - frameSize + xOffSet, -frameSize - yOffset, vidWidth + (frameSize * 2) , vidHeight + (frameSize * 2));
+            
+            // Filter
             filters[i]->draw(vidWidth + xOffSet, -yOffset);
         }
         
         // Quad 3
         else if (filters[i]->location == 3){
+            
+            // Title
+            filterTitle.drawString(filters[i]->title, -titleOffsetX, vidHeight + (yOffset * 2) + titleOffsetY);
+            
+            // Description
+            
+            // Frame
             ofRect(-frameSize - xOffSet, vidHeight - frameSize + yOffset, vidWidth + (frameSize * 2) , vidHeight + (frameSize * 2));
+            
+            // Filter
             filters[i]->draw(-xOffSet, vidHeight + yOffset);
         }
         
         // Quad 4
         else if (filters[i]->location == 4){
+            
+            // Title
+            filterTitle.drawString(filters[i]->title, (vidWidth * 2) + titleOffsetX - stringLen, vidHeight + (yOffset * 2) + titleOffsetY);
+            
+            // Description
+            
+            // Frame
             ofRect(vidWidth - frameSize + xOffSet, vidHeight - frameSize + yOffset, vidWidth + (frameSize * 2) , vidHeight + (frameSize * 2));
+            
+            // Filter
             filters[i]->draw(vidWidth + xOffSet, vidHeight + yOffset);
         }
     }
     
     // Live view
+    ofSetColor(0, 0, 0);
+    ofRect((grabber.width*1.25)+frameSize, (grabber.height*.75)-frameSize, -320 - (frameSize * 2),240 + (frameSize * 2));
+    ofSetColor(255, 255, 255);
     grabber.draw(grabber.width*1.25, grabber.height*.75, -320,240);
     
     ofPopMatrix();

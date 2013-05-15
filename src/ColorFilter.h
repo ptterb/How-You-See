@@ -29,7 +29,4 @@ public:
     
     ofxCvColorImage colorImage;
     
-    // Filter text
-    ofTrueTypeFont filterfont;
-    
 };
