@@ -15,6 +15,7 @@ TextureFilter::TextureFilter(){
     // Load title and description
     title = "Texture";
     desc = loadDesc("texture");
+    color.set(255, 206, 13);
     
     grayscale.allocate(vWidth, vHeight);
     blur.allocate(vWidth, vHeight);

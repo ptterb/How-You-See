@@ -40,6 +40,7 @@ public:
     
     string desc;
     string title;
+    ofColor color;
 };
 
 

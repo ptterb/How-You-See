@@ -17,6 +17,7 @@ DirectionFilter::DirectionFilter(){
     // Load title and description
     title = "Orientation";
     desc = loadDesc("orientation");
+    color.set(255, 0, 0);
     
     
     colorImage.allocate(vWidth, vHeight);

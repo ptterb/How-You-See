@@ -15,6 +15,7 @@ FacesFilter::FacesFilter(){
     // Load title and description
     title = "Faces";
     desc = loadDesc("faces");
+    color.set(0, 80, 255);
     
     //need this for alpha to come through
 	ofEnableAlphaBlending();

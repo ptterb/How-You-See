@@ -15,6 +15,7 @@ MotionFilter::MotionFilter(){
     // Load title and description
     title = "Motion";
     desc = loadDesc("motion");
+    color.set(0, 185, 0);
     
     colorImage.allocate(vWidth, vHeight);
     grayImage.allocate(vWidth, vHeight);

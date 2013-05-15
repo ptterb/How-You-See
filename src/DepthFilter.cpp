@@ -16,6 +16,7 @@ DepthFilter::DepthFilter(){
     // Load title and description
     title = "Depth";
     desc = loadDesc("depth");
+    color.set(255, 144, 0);
     
     // enable depth->video image calibration
 	kinect.setRegistration(true);

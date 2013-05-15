@@ -19,6 +19,8 @@ ColorFilter::ColorFilter(){
     // Load title and description
     title = "Color";
     desc = loadDesc("color");
+    color.set(97, 0, 176);
+    
     
     // This is where you set up the filter. Any variables that need to be allocated should be done here.
     

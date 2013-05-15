@@ -72,8 +72,9 @@ void testApp::draw(){
         if (filters[i]->location == 1){
             
             // Title
+            ofSetColor(filters[i]->color);
             filterTitle.drawString(filters[i]->title, -titleOffsetX, -titleOffsetY);
-            
+            ofSetColor(255, 255, 255);
             // Description
             filterDesc.drawString(filters[i]->desc, -titleOffsetX, -titleOffsetY + titleHeight );
             
@@ -88,7 +89,9 @@ void testApp::draw(){
         else if (filters[i]->location == 2){
             
             // Title
+            ofSetColor(filters[i]->color);
             filterTitle.drawString(filters[i]->title, (vidWidth * 2) + titleOffsetX - stringLen, -titleOffsetY);
+            ofSetColor(255, 255, 255);
             
             // Description
             filterDesc.drawString(filters[i]->desc, (vidWidth * 2) + (xOffSet * 2), -titleOffsetY + titleHeight );
@@ -104,7 +107,9 @@ void testApp::draw(){
         else if (filters[i]->location == 3){
             
             // Title
+            ofSetColor(filters[i]->color);
             filterTitle.drawString(filters[i]->title, -titleOffsetX, vidHeight + (yOffset * 2) + titleOffsetY);
+            ofSetColor(255, 255, 255);
             
             // Description
             filterDesc.drawString(filters[i]->desc, -titleOffsetX, vidHeight + (yOffset * 2) +titleOffsetY + titleHeight );
@@ -120,7 +125,9 @@ void testApp::draw(){
         else if (filters[i]->location == 4){
             
             // Title
+            ofSetColor(filters[i]->color);
             filterTitle.drawString(filters[i]->title, (vidWidth * 2) + titleOffsetX - stringLen, vidHeight + (yOffset * 2) + titleOffsetY);
+            ofSetColor(255, 255, 255);
             
             // Description
             filterDesc.drawString(filters[i]->desc, (vidWidth * 2) + (xOffSet * 2), vidHeight + (yOffset * 2) +titleOffsetY + titleHeight );
