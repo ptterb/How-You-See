@@ -1,0 +1,3 @@
+testing 
+line breaks in importing a string.
+might be able to get by without wrapping.

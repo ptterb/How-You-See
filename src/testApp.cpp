@@ -91,6 +91,7 @@ void testApp::draw(){
             filterTitle.drawString(filters[i]->title, (vidWidth * 2) + titleOffsetX - stringLen, -titleOffsetY);
             
             // Description
+            filterDesc.drawString(filters[i]->desc, (vidWidth * 2) + (xOffSet * 2), -titleOffsetY + titleHeight );
             
             // Frame
             ofRect(vidWidth - frameSize + xOffSet, -frameSize - yOffset, vidWidth + (frameSize * 2) , vidHeight + (frameSize * 2));
@@ -106,6 +107,7 @@ void testApp::draw(){
             filterTitle.drawString(filters[i]->title, -titleOffsetX, vidHeight + (yOffset * 2) + titleOffsetY);
             
             // Description
+            filterDesc.drawString(filters[i]->desc, -titleOffsetX, vidHeight + (yOffset * 2) +titleOffsetY + titleHeight );
             
             // Frame
             ofRect(-frameSize - xOffSet, vidHeight - frameSize + yOffset, vidWidth + (frameSize * 2) , vidHeight + (frameSize * 2));
@@ -121,6 +123,7 @@ void testApp::draw(){
             filterTitle.drawString(filters[i]->title, (vidWidth * 2) + titleOffsetX - stringLen, vidHeight + (yOffset * 2) + titleOffsetY);
             
             // Description
+            filterDesc.drawString(filters[i]->desc, (vidWidth * 2) + (xOffSet * 2), vidHeight + (yOffset * 2) +titleOffsetY + titleHeight );
             
             // Frame
             ofRect(vidWidth - frameSize + xOffSet, vidHeight - frameSize + yOffset, vidWidth + (frameSize * 2) , vidHeight + (frameSize * 2));
