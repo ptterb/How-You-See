@@ -34,20 +34,12 @@ void DepthFilter::update(){
 	
 	kinect.update();
     
-    
+    // Boom-move the camera and tilt to better see depth
     if (easyCam.getY() > 400 || easyCam.getY() < -200) {
         degrees = degrees * -1;
         tilt = tilt * -1;
     }
- 
     
-
-    
-    
-    
-//    ofLogNotice() << "x axis: " << easyCam.getXAxis();
-//        ofLogNotice() << "y axis: " << easyCam.getYAxis();
-//        ofLogNotice() << "z axis: " << easyCam.getZAxis();
     ofLogNotice() << "Position: " << degrees;
     
 };
@@ -60,7 +52,6 @@ void DepthFilter::draw(float x, float y){
     ofRect(0, 0, vWidth, vHeight);
     ofSetColor(255, 255, 255);
     easyCam.begin();
-//    easyCam.setGlobalPosition(0, 0, 0);
     easyCam.boom(degrees);
     easyCam.tilt(tilt);
     drawPointCloud();
