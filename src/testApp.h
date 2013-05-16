@@ -51,17 +51,17 @@ class testApp : public ofBaseApp{
         Unplugged unplugged2;
     
     
-    int frameSize = 10;
-    int xOffSet = 30;
-    int yOffset = 30;
+        int frameSize = 10;
+        int xOffSet = 30;
+        int yOffset = 30;
     
-    int titleOffsetX = 300;
-    int titleOffsetY = 5;
+        int titleOffsetX = 300;
+        int titleOffsetY = 5;
+        
+        string desc[6];
     
-    string desc[6];
-    
-    // Filter font
-    ofTrueTypeFont filterTitle;
-    ofTrueTypeFont filterDesc;
+        // Filter font
+        ofTrueTypeFont filterTitle;
+        ofTrueTypeFont filterDesc;
 
 };

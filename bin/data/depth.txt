@@ -1,3 +1,7 @@
-testing 
-line breaks in importing a string.
-might be able to get by without wrapping.
+Seeing 3D space
+depends on your
+brain's ability
+to integrate signals
+from both eyes
+allowing for
+binocular vision.

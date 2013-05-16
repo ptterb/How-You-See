@@ -24,8 +24,12 @@ void testApp::setup(){
     ofLogNotice() << filters[4]->desc;
     
     // Initialize fonts
+    ofEnableSmoothing();
+//    ofTrueTypeFont::setGlobalDpi(72);
+    filterDesc.setSpaceSize(0.6);
     filterTitle.loadFont("Gotham-Bold.ttf", 32, true);
     filterDesc.loadFont("Gotham-Medium.ttf", 16, true);
+
 
 }
 
@@ -75,8 +79,9 @@ void testApp::draw(){
             ofSetColor(filters[i]->color);
             filterTitle.drawString(filters[i]->title, -titleOffsetX, -titleOffsetY);
             ofSetColor(255, 255, 255);
+            
             // Description
-            filterDesc.drawString(filters[i]->desc, -titleOffsetX, -titleOffsetY + titleHeight );
+            filterDesc.drawString(filters[i]->desc, -titleOffsetX, -titleOffsetY + titleHeight);
             
             // Frame
             ofRect(-frameSize - xOffSet, -frameSize - yOffset, vidWidth + (frameSize * 2) , vidHeight + (frameSize * 2));
@@ -90,9 +95,9 @@ void testApp::draw(){
             
             // Title
             ofSetColor(filters[i]->color);
-            filterTitle.drawString(filters[i]->title, (vidWidth * 2) + titleOffsetX - stringLen, -titleOffsetY);
+            filterTitle.drawString(filters[i]->title, (vidWidth * 2) + titleOffsetX - 245, -titleOffsetY);
             ofSetColor(255, 255, 255);
-            
+
             // Description
             filterDesc.drawString(filters[i]->desc, (vidWidth * 2) + (xOffSet * 2), -titleOffsetY + titleHeight );
             
@@ -126,7 +131,7 @@ void testApp::draw(){
             
             // Title
             ofSetColor(filters[i]->color);
-            filterTitle.drawString(filters[i]->title, (vidWidth * 2) + titleOffsetX - stringLen, vidHeight + (yOffset * 2) + titleOffsetY);
+            filterTitle.drawString(filters[i]->title, (vidWidth * 2) + titleOffsetX - 245, vidHeight + (yOffset * 2) + titleOffsetY);
             ofSetColor(255, 255, 255);
             
             // Description
