@@ -34,35 +34,21 @@ void DepthFilter::update(){
 	
 	kinect.update();
     
-    // AutoPan the camera
-//    if (dir) {
-//        if (degrees <= maxDeg) {
-//            degrees += .05;
-//            
-//            ofLogNotice() << "degrees: " << degrees;
-//        }
-//        else {
-//            dir = !dir;
-//            ofLogNotice() << "change dir " << dir;
-//        }
-//    }
-//    else {
-//        if (degrees >= minDeg){
-//            degrees -= .05;
-//        }
-//        else {
-//            dir = !dir;
-//        }
-//    }
     
-    if (abs(easyCam.getHeading()) > 17) {
+    if (easyCam.getY() > 400 || easyCam.getY() < -200) {
         degrees = degrees * -1;
+        tilt = tilt * -1;
     }
+ 
+    
+
+    
+    
     
 //    ofLogNotice() << "x axis: " << easyCam.getXAxis();
 //        ofLogNotice() << "y axis: " << easyCam.getYAxis();
 //        ofLogNotice() << "z axis: " << easyCam.getZAxis();
-    ofLogNotice() << "Position: " << easyCam.getGlobalPosition();
+    ofLogNotice() << "Position: " << degrees;
     
 };
 
@@ -74,8 +60,9 @@ void DepthFilter::draw(float x, float y){
     ofRect(0, 0, vWidth, vHeight);
     ofSetColor(255, 255, 255);
     easyCam.begin();
-    easyCam.setGlobalPosition(-20, 0, 170);
-    easyCam.pan(degrees);
+//    easyCam.setGlobalPosition(0, 0, 0);
+    easyCam.boom(degrees);
+    easyCam.tilt(tilt);
     drawPointCloud();
     easyCam.end();
     fbo.end();

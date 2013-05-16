@@ -47,11 +47,12 @@ public:
     // used for viewing the point cloud
 	ofEasyCam easyCam;
     
-    float degrees = 1;
+    float degrees = 10;
+    float tilt = -1;
     int lastSwitch = 0;
     int panInterval = 3;
-    bool dir = true;
-    float maxDeg = 10;
-    float minDeg = -5;
+    int dir = 1;
+    float maxDeg = 400;
+    float minDeg = -200;
 
 };
