@@ -42,14 +42,16 @@ public:
     ofxKinect kinect;
 	
     //ADJUST WHEN SET IN FRAME
-	int angle = 0;
+	int angle = -20;
     
     // used for viewing the point cloud
 	ofEasyCam easyCam;
     
-    float degrees;
-    bool dir;
-    float maxDeg;
-    float minDeg;
+    float degrees = 1;
+    int lastSwitch = 0;
+    int panInterval = 3;
+    bool dir = true;
+    float maxDeg = 10;
+    float minDeg = -5;
 
 };

@@ -16,7 +16,7 @@ DepthFilter::DepthFilter(){
     // Load title and description
     title = "Depth";
     desc = loadDesc("depth");
-    color.set(255, 144, 0);
+    color.set(255, 100, 0);
     
     // enable depth->video image calibration
 	kinect.setRegistration(true);
@@ -27,6 +27,7 @@ DepthFilter::DepthFilter(){
     
 	// Move to angle we want. once mounted, this shouldn't move
 	kinect.setCameraTiltAngle(angle);
+    
 };
 
 void DepthFilter::update(){
@@ -34,17 +35,34 @@ void DepthFilter::update(){
 	kinect.update();
     
     // AutoPan the camera
-    if (dir) {
-        if (degrees <= maxDeg) {
-            degrees += 10;
-        }
-    }
-    else {
-        if (degrees >= minDeg){
-            degrees -= 10;
-        }
+//    if (dir) {
+//        if (degrees <= maxDeg) {
+//            degrees += .05;
+//            
+//            ofLogNotice() << "degrees: " << degrees;
+//        }
+//        else {
+//            dir = !dir;
+//            ofLogNotice() << "change dir " << dir;
+//        }
+//    }
+//    else {
+//        if (degrees >= minDeg){
+//            degrees -= .05;
+//        }
+//        else {
+//            dir = !dir;
+//        }
+//    }
+    
+    if (abs(easyCam.getHeading()) > 17) {
+        degrees = degrees * -1;
     }
     
+//    ofLogNotice() << "x axis: " << easyCam.getXAxis();
+//        ofLogNotice() << "y axis: " << easyCam.getYAxis();
+//        ofLogNotice() << "z axis: " << easyCam.getZAxis();
+    ofLogNotice() << "Position: " << easyCam.getGlobalPosition();
     
 };
 
@@ -52,7 +70,11 @@ void DepthFilter::draw(float x, float y){
     
     fbo.begin();
     ofClear(0, 0, 0, 0);
+    ofSetColor(0, 0, 0);
+    ofRect(0, 0, vWidth, vHeight);
+    ofSetColor(255, 255, 255);
     easyCam.begin();
+    easyCam.setGlobalPosition(-20, 0, 170);
     easyCam.pan(degrees);
     drawPointCloud();
     easyCam.end();
