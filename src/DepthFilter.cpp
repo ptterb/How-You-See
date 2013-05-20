@@ -38,9 +38,23 @@ void DepthFilter::update(){
     if (easyCam.getY() > 400 || easyCam.getY() < -200) {
         degrees = degrees * -1;
         tilt = tilt * -1;
+        if (easyCam.getY() > 401) {
+            easyCam.move(0, -5, 0);
+            ofLogNotice() << "Out of Frame!";
+        }
+        
+        if (easyCam.getZ() > 475) {
+            easyCam.move(0, 0, -5);
+            ofLogNotice() << "Out of Frame!";
+        }
+        
     }
     
+
+    
     ofLogNotice() << "Position: " << degrees;
+    ofLogNotice() << "Tilt: " << tilt;
+    ofLogNotice() << "Z: " << easyCam.getZ();
     
 };
 

@@ -8,7 +8,7 @@
 void testApp::setup(){
         
     // WHEN RUNNING ON LAPTOP WITH BUILT-IN CAMERA, UNCOMMENT THE FOLLOWING LINE
-    //grabber.setDeviceID(1);
+    grabber.setDeviceID(1);
     grabber.initGrabber(vidWidth, vidHeight);
     
     // Add filters into the superclass array

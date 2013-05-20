@@ -13,7 +13,7 @@ Filter::Filter(){
     // Allocate the grabber and FBO
     
     // WHEN RUNNING ON LAPTOP WITH BUILT-IN CAMERA, UNCOMMENT THE FOLLOWING LINE
-    //grabber.setDeviceID(1);
+    grabber.setDeviceID(1);
     grabber.initGrabber(vWidth, vHeight);
     fbo.allocate(vWidth, vHeight);
     
