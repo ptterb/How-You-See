@@ -5,7 +5,7 @@ How You See
 
 Special thanks to Dr. Anthony Movshon, Ph.D, Jeremy Freeman, Ph.D & Corey Ziemba, B.S. for patiently explaining the neuroscience to us.
 
-This application uses a webcam and kinect to illustrate how your brain processes what you see. 
+This application is written in openFrameworks and uses a webcam and kinect to illustrate how your brain processes what you see. 
 
-Addons needed to run include: ofxKinect, ofxOpenCV, ofxFX.
+Addons needed to run include: [ofxKinect](https://github.com/ofTheo/ofxKinect), [ofxOpenCV](https://github.com/openframeworks/openFrameworks/tree/master/addons/ofxOpenCv), [ofxFX](https://github.com/patriciogonzalezvivo/ofxFX).
 
